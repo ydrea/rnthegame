@@ -1,0 +1,17 @@
+.wrapper {
+  border: 3px solid #e2ba42;
+}
+
+.container {
+  background-color: #31328f;
+}
+
+.barCompleted {
+  background-color: #e2ba42;
+  width: 80%;
+}
+
+.label {
+  font-size: 20px;
+  color: #31328f;
+}/*# sourceMappingURL=bar.css.map */

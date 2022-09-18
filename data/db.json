@@ -1,0 +1,156 @@
+{
+  "sculptures": [
+    {
+      "id": 0,
+      "title": "kumica",
+      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "name": "Kumica",
+      "surname": "sPlaca",
+      "question": " ",
+      "description": "The game is played",
+      "icon": "assets/ico/ping_0.png",
+      "img": "assets/img/Kumica.jpg"
+    },
+
+    {
+      "id": 1,
+      "title": "senoa",
+      "coordinate": { "latitude": 45.815, "longitude": 15.9819 },
+      "name": "August",
+      "surname": "Senoa",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "`Tis Christmas. Plain and hill Under dense snowy chill; This intact vale Is pale, is pale. In the village, a light from a pane, Sweet pastries on table displayed, Father shots fires, words arcane, And the children jump gaily and play, Loudly screaming and running from joy On the little room`s floor, straw-adorned, Mother and children singing enjoy: `Couse the king of Heaven is born.",
+      "icon": "assets/ico/ping_1.png",
+      "img": "assets/img/Senoa.jpg"
+    },
+    {
+      "id": 2,
+      "title": "matos",
+      "coordinate": { "latitude": 45.8145, "longitude": 15.9816 },
+      "name": "Antun Gustav",
+      "surname": "Matos",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "On the gallows. Dry as stick. On the jail wall. Wall of shame. Underneath it a criminal hole, Murder scene, dark as adultery. I saw somwehere that countryside skirt, Because my mother has such a face, And some lady has similar eyes To nice place my path me brought me! And instead of her, I jumped into the fatal hole      And with its blood sweat I wet My impertinent cheek as with tears. Because they hung my Croatia, Like a thief, while it erases her name, On I do not know who`s wish, an officer in jail!",
+      "icon": "assets/ico/ping_2.png",
+      "img": "assets/img/Matos.jpg"
+    },
+    {
+      "id": 3,
+      "title": "ujevic",
+      "coordinate": { "latitude": 45.814, "longitude": 15.9813 },
+      "name": "Tin",
+      "surname": "Ujevic",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "Who will understand why? No one will!\n I rail at God each time I pray! Within my flesh my soul lies ill.\n A woman makes me waste away.\n Instead of staying in my shell\n when young and green I sought renown\n in the wide world - but here in hell\n now wear this thorn and wormwood crown.\n With each tear, more tears long to blend,\n consoling each sad syllable.\n Aye, Hope is all: but here`s an end,\n my life, my world, my hope - farewell.",
+      "icon": "assets/ico/ping_3.png",
+      "img": "assets/img/Ujevic.jpg"
+    },
+    {
+      "id": 4,
+      "title": "martic",
+      "coordinate": { "latitude": 45.8135, "longitude": 15.982 },
+      "name": "Grgo",
+      "surname": "Martic",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "Sniff the days, don't dawn me. Stop heating me my hot sun. Eternal hills don't green yourselves. Do not bloom immortelle and basil, Sieze your dances darling friends. Untangle your merry gettogethers. Quit your singing my young shepherds. Put away the dips and pipes. Silence the fiddles and tambourines.",
+      "icon": "assets/ico/ping_4.png",
+      "img": "assets/img/Martic.jpg"
+    },
+    {
+      "id": 5,
+      "title": "krleza",
+      "coordinate": { "latitude": 45.8136, "longitude": 15.98 },
+      "name": "Miroslav",
+      "surname": "Krleza",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "Tira-lira, tiralee, piped the flute under the gallows tree. Tira-lira, tiraloo, the gallows are for me and you. My hat`s at a rakish angle set, rain and wind my coverlet. Be Christens we or fiends of hell, for us will toll the felon`s bell. Thru` all times and eternity gallows are the remedy. Streams of blood will flow away, flow for ever and a day. Out of this hell there is no way, the lords grow fat, poor Tom must pay, scarlet May-time, bloody May. Tira-lira, tiralee, piped the flute under the gallows tree.",
+      "icon": "assets/ico/ping_5.png",
+      "img": "assets/img/Krleza.jpg"
+    },
+    {
+      "id": 6,
+      "title": "zagorka",
+      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "name": "Marija",
+      "surname": "Juric Zagorka",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "”As I have told you before, the purpose of my life now is to search for proof that witches do not exist.” ”All right. But please allow me to make one request.” ”What is it?” ”May I join you in this dangerous venture?” She returned his warm, supplicating gaze: ”Yes, Hon. Captain. Please, be my ally.” ”I will devote my life to proving to the world that belief in witches—which had caused you so much pain, Contessa—is nothing but a terrible misapprehension.”",
+      "icon": "assets/ico/ping_6.png",
+      "img": "assets/img/Zagorka.jpg"
+    },
+    {
+      "id": 7,
+      "title": "tesla",
+      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "name": "Nikola",
+      "surname": "Tesla",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "Tesla was born on July 10, 1856, in the Austrian Empire, now Croatia. After an academic career in Europe, he worked as a telegrapher and electrician before moving to the United States to work for Thomas Edison in 1884. Tesla invented, predicted or contributed to development of hundreds of technologies that play big parts in our daily lives: the remote control, neon and fluorescent lights, wireless transmission, computers, smartphones, laser beams, x-rays, robotics as well as the alternating current.",
+      "icon": "assets/ico/ping_7.png",
+      "img": "assets/img/Tesla.jpg"
+    },
+    {
+      "id": 8,
+      "title": "fin",
+      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "name": "*",
+      "surname": "sPlaca",
+      "question": "Well played! Enter YOUR name.",
+      "description": "Congrats !",
+      "icon": "assets/ico/ping_8.png",
+      "img": "assets/img/Congratulation.jpg"
+    }
+  ],
+  "planets": [
+    {
+      "pid": 0,
+      "name": "sun",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9812 }
+    },
+    {
+      "pid": 1,
+      "name": "mercur",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9813 }
+    },
+    {
+      "pid": 2,
+      "name": "venus",
+      "coordinate": { "latitude": 45.8141, "longitude": 15.9813 }
+    },
+    {
+      "pid": 3,
+      "name": "earth",
+      "coordinate": { "latitude": 45.8142, "longitude": 15.9813 }
+    },
+    {
+      "pid": 4,
+      "name": "mars",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9814 }
+    },
+    {
+      "pid": 5,
+      "name": "jupiter",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9815 }
+    },
+    {
+      "pid": 6,
+      "name": "saturn",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9816 }
+    },
+    {
+      "pid": 7,
+      "name": "uranus",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9817 }
+    },
+    {
+      "pid": 8,
+      "name": "neptune",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9818 }
+    },
+    {
+      "pid": 9,
+      "name": "pluto",
+      "coordinate": { "latitude": 45.8141, "longitude": 15.9819 }
+    }
+  ]
+}

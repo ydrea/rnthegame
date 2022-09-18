@@ -1,0 +1,21 @@
+@mixin whenDark {
+  html.dark & {
+    @content;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin kontenjer {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@mixin fontsize {
+  font-size: calc(10px + 2.4vmin);
+}

@@ -1,0 +1,138 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.button, .link {
+  font-size: calc(10px + 2.4vmin);
+  border: 2px solid;
+  margin: 2px;
+  color: #e2ba42;
+  background: #31328f;
+  cursor: pointer;
+  padding: 0.1rem 0.1rem;
+  margin: 0.4rem;
+}
+.button:hover, .link:hover {
+  color: #31328f;
+  background-color: #e2ba42;
+  padding: 0.17rem;
+}
+.button:disabled, .link:disabled,
+.button .button[disabled],
+.link .button[disabled] {
+  color: #31328f;
+  pointer-events: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #31328f;
+  color: #e2ba42;
+}
+
+.header {
+  border-bottom: 3px;
+  border-color: #e2ba42;
+  background-color: #31328f;
+  max-height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #e2ba42;
+}
+.header .drop {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60%;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.qcard {
+  flex-direction: column;
+  max-width: 18rem;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.qcard img {
+  max-width: 100%;
+}
+
+.rcard {
+  flex: 1;
+  max-width: 18rem;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  background-color: #e2ba42;
+  height: 1.3rem;
+  color: #31328f;
+  max-width: 11rem;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  max-height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #31328f;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: inherit;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 425px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+@media (min-width: 356px) {
+  .header {
+    justify-content: left;
+    margin: 0;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=App.css.map */
