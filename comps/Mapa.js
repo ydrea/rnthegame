@@ -1,4 +1,3 @@
-import { useState, useCallback, memo } from "react";
 import { View, StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   body: {
@@ -12,11 +11,6 @@ const center = {
 };
 
 export default function Map() {
-  // const { isLoaded } = useJsApiLoader({
-  //   id: "google-map-script",
-  //   googleMapsApiKey: "REACT_APP_API_KEY",
-  // });
-
   return (
     <View style={styles.body}>
       <GoogleMap
@@ -25,7 +19,6 @@ export default function Map() {
         zoom={10}
         onLoad={onLoad}
         onUnmount={onUnmount}
-        // preventGoogleFonts
       ></GoogleMap>
     </View>
   );

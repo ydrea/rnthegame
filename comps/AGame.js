@@ -6,8 +6,9 @@ import RCard from "./RCard";
 import { selectSculptures } from "../redux/dataSlice";
 import { selectCount } from "../redux/counterSlice";
 //
+import { View } from "react-native";
+//
 function AGame() {
-  //local stejt
   const [query, querySet] = useState("");
   const [search, searchSet] = useState();
   const handleChange = (e) => {
@@ -29,15 +30,15 @@ function AGame() {
   console.log(sculpture);
   // //
   return (
-    <div className="cards">
+    <View>
       <QCard
         sculpture={sculpture}
         query={query}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      {search == sculpture.name ? <RCard sculpture={sculpture} /> : null}
-    </div>
+      {search === sculpture.name ? <RCard sculpture={sculpture} /> : null}
+    </View>
   );
 }
 

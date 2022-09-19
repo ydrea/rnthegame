@@ -1,12 +1,13 @@
-import Mapa from "./Mapa";
+import { View, Text } from "react-native";
+
 //
 function BGame() {
   //local stejt
 
   return (
-    <div>
-      <Mapa />
-    </div>
+    <View>
+      <Text>Mapa</Text>
+    </View>
   );
 }
 

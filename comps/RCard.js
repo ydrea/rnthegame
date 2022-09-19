@@ -1,13 +1,18 @@
+import { View, Text } from "react-native";
 import { Card } from "react-native-paper";
 
 function RCard({ sculpture }) {
   return (
-    <div>
-      <p>Correct!</p>
-      <Card className="rcard">
-        <div>{sculpture.description}</div>
+    <View>
+      <View>
+        <Text>Correct!</Text>
+      </View>
+      <Card>
+        <View>
+          <Text>{sculpture.description}</Text>
+        </View>
       </Card>
-    </div>
+    </View>
   );
 }
 

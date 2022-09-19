@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 //
 import { Provider as PaperProvider } from "react-native-paper";
 import { Provider as ReduxProvider } from "react-redux";
@@ -8,8 +8,10 @@ import { store } from "./redux/store";
 import Header from "./comps/Header";
 import Main from "./comps/Main";
 import Footer from "./comps/Footer";
+import { useState } from "react";
 //
 export default function App() {
+  const [drop, dropSet] = useState("monument");
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -17,8 +19,7 @@ export default function App() {
         <PaperProvider>
           <Header />
           <View style={styles.body}>
-            <Text style={styles.text}>Alo medo!</Text>
-            <Main />
+            <Main drop={drop} />
           </View>
           <Footer />
         </PaperProvider>
@@ -30,15 +31,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    color: "white",
+    color: "#fff",
     backgroundColor: "#323",
     alignItems: "center",
     justifyContent: "center",
   },
   body: {
-    backgroundColor: "white",
+    backgroundColor: "#fff",
   },
   text: {
-    fontSize: "12px",
+    fontSize: 20,
   },
 });

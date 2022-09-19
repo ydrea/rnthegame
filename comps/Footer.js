@@ -1,11 +1,11 @@
+import { View } from "react-native";
 import Counter from "./Counter";
 //
 function Footer() {
   return (
-    <div className="footer">
+    <View>
       <Counter />
-      bottom nav
-    </div>
+    </View>
   );
 }
 

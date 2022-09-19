@@ -1,35 +1,29 @@
-// import Progress from "./ProgressBar";
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
-import { View } from "react-native";
-//
-//
+import { View, Button, Text, StyleSheet } from "react-native";
 
 function Counter() {
   return (
-    <div>
+    <View>
       <Monitor />
-      <Switch />{" "}
-    </div>
+      <Switch />
+    </View>
   );
 }
-//
 
 function Nav() {
   return (
-    <div className="nav">
+    <View>
       <PButton />
       <NButton />
-    </div>
+    </View>
   );
 }
 //
 export const Switch = () => {
-  // const [game, gameSet] = useState("start");
   const count = useSelector(selectCount);
-  //
+
   if (count === 0) {
-    console.log("nula");
     return <NButton />;
   } else if (count < 8) {
     return <Nav />;
@@ -43,15 +37,9 @@ export const PButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <div>
-      <button
-        className="button"
-        size="lg"
-        onClick={() => dispatch(decrement())}
-      >
-        &lArr; prev
-      </button>
-    </div>
+    <View>
+      <Button onPress={() => dispatch(decrement())} title="prev" />
+    </View>
   );
 };
 
@@ -60,22 +48,36 @@ export const NButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <div>
-      <button
-        className="button"
-        size="lg"
-        onClick={() => dispatch(increment())}
-      >
-        next &rArr;
-      </button>
-    </div>
+    <View>
+      <Button onPress={() => dispatch(increment())} title="next" />
+    </View>
   );
 };
 
 export const Monitor = () => {
   const count = useSelector(selectCount);
 
-  return <div className="count">{/* <Progress count={count} /> */}</div>;
+  return (
+    <View>
+      <Text style={styles.body}>broj {count}</Text>
+    </View>
+  );
 };
 
 export default Counter;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    color: "white",
+    backgroundColor: "#323",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  body: {
+    backgroundColor: "white",
+  },
+  text: {
+    fontSize: 20,
+  },
+});
