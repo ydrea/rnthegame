@@ -1,24 +1,28 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 //
-import { Provider } from "react-redux";
+import { Provider as PaperProvider } from "react-native-paper";
+import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./redux/store";
 //
 import Header from "./comps/Header";
+import Main from "./comps/Main";
 import Footer from "./comps/Footer";
 //
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Provider store={store}>
-        {" "}
-        <Header />
-        <View style={styles.body}>
-          <Text style={styles.text}>Alo medo!</Text>
-        </View>
-        <Footer />
-      </Provider>
+      <ReduxProvider store={store}>
+        <PaperProvider>
+          <Header />
+          <View style={styles.body}>
+            <Text style={styles.text}>Alo medo!</Text>
+            <Main />
+          </View>
+          <Footer />
+        </PaperProvider>
+      </ReduxProvider>
     </View>
   );
 }
@@ -35,6 +39,6 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   text: {
-    fontSize: "1.2rem",
+    fontSize: "12px",
   },
 });

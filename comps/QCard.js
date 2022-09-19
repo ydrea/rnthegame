@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Input, Button } from "reactstrap";
+import { Card, TextInput, Button } from "react-native-paper";
 //
 function QCard({ sculpture, query, handleChange, handleSubmit }) {
   return (
@@ -11,7 +11,7 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
 
         {sculpture.id > 0 ? (
           <form className="form" onSubmit={handleSubmit}>
-            <Input
+            <TextInput
               className="input"
               placeholder="Enter response"
               type="text"

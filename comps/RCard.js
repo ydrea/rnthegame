@@ -1,4 +1,4 @@
-import { Card } from "reactstrap";
+import { Card } from "react-native-paper";
 
 function RCard({ sculpture }) {
   return (
