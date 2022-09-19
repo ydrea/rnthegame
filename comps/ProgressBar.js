@@ -1,26 +1,14 @@
-import ProgressBar from "@ramonak/react-progress-bar";
-import "../styles/bar.scss";
+//
+// import ProgressBar from "react-native-progress/Bar";
 //
 
+import { StyleSheet, Text, View } from "react-native";
 //
-const ProgressBA = (props) => {
+
+export default Progress = ({ count }) => {
   return (
-    <div>
-      <ProgressBar
-        completed={props.count.toString()}
-        width="19rem"
-        height="1rem"
-        borderRadius="5px"
-        maxCompleted={7}
-        isLabelVisible={true}
-        transitionTimingFunction="ease"
-        bgColor="#e2ba42"
-        baseBgColor="#31328f"
-        labelColor="#31328f"
-        transitionDuration="0.2s"
-      />
-    </div>
+    <>
+      <ProgressBar progress={0.3} width={200} />
+    </>
   );
 };
-
-export default ProgressBA;

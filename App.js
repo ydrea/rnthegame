@@ -14,7 +14,9 @@ export default function App() {
       <Provider store={store}>
         {" "}
         <Header />
-        <Text>Open up App.js to start working on your app!</Text>
+        <View style={styles.body}>
+          <Text style={styles.text}>Alo medo!</Text>
+        </View>
         <Footer />
       </Provider>
     </View>
@@ -24,8 +26,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    color: "white",
+    backgroundColor: "#323",
     alignItems: "center",
     justifyContent: "center",
+  },
+  body: {
+    backgroundColor: "white",
+  },
+  text: {
+    fontSize: "1.2rem",
   },
 });

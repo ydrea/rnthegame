@@ -1,7 +1,7 @@
-import { ProgressBar } from "react-native-web";
+// import Progress from "./ProgressBar";
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
-
+import { View } from "react-native";
 //
 //
 
@@ -75,11 +75,7 @@ export const NButton = () => {
 export const Monitor = () => {
   const count = useSelector(selectCount);
 
-  return (
-    <div className="count">
-      <ProgressBar count={count} />
-    </div>
-  );
+  return <div className="count">{/* <Progress count={count} /> */}</div>;
 };
 
 export default Counter;
