@@ -1,6 +1,6 @@
 import React from "react";
-import { Image, Text, View, Button, StyleSheet } from "react-native";
-import { Card, TextInput } from "react-native-paper";
+import { Image, Text, View, StyleSheet } from "react-native";
+import { Button, Card, TextInput } from "react-native-paper";
 import { images } from "../data/images";
 import { useSelector } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
@@ -13,11 +13,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   img: {
+    // paddingHorizontal: 30,
     width: 200,
     height: 150,
   },
   question: {
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
+    color: "#e2ba42",
   },
   inputContainer: {
     flexDirection: "row",
@@ -26,6 +28,17 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
   submit: { width: 100 },
+  bot: {
+    backfaceVisibility: "hidden",
+  },
+  un: {
+    borderColor: "#e2ba42",
+    borderWidth: 2,
+    borderRadius: 9,
+  },
+  lab: {
+    color: "#e2ba42",
+  },
 });
 
 //
@@ -52,12 +65,20 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
               />
             </View>
             <View style={styles.submit}>
-              <Button title="enter" onPress={() => handleSubmit()} />
+              <View style={styles.bot}>
+                <View style={styles.un}>
+                  <Button mode="outlined" onPress={() => handleSubmit()}>
+                    <Text style={styles.lab}>submit</Text>
+                  </Button>
+                </View>
+              </View>
             </View>
           </View>
         ) : (
           <View>
-            <Text>Start playing by clicking "Next" below </Text>
+            <Text style={styles.question}>
+              Start playing by clicking "Next" below{" "}
+            </Text>
           </View>
         )}
       </View>

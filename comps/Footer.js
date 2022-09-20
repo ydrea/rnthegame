@@ -4,8 +4,10 @@ import Counter from "./Counter";
 
 const styles = StyleSheet.create({
   footer: {
-    color: "#fff",
-    flex: 5,
+    color: "#e2ba42",
+    flex: 1,
+    paddingBottom: 6,
+    marginBottom: 6,
   },
 });
 //

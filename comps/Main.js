@@ -13,15 +13,9 @@ export default Main;
 
 const styles = StyleSheet.create({
   main: {
-    flex: 1,
-    backgroundColor: "#fff",
+    flex: 5,
+    // backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-  },
-  body: {
-    backgroundColor: "#fff",
-  },
-  text: {
-    fontSize: 20,
   },
 });

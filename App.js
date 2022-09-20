@@ -18,9 +18,7 @@ export default function App() {
       <ReduxProvider store={store}>
         <PaperProvider>
           <Header />
-          <View style={styles.body}>
-            <Main drop={drop} />
-          </View>
+          <Main drop={drop} />
           <Footer />
         </PaperProvider>
       </ReduxProvider>
@@ -31,13 +29,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    color: "#fff",
-    backgroundColor: "#323",
+    color: "#e2ba42",
+    backgroundColor: "#31328f",
     alignItems: "center",
     justifyContent: "center",
   },
   body: {
-    backgroundColor: "#fff",
+    color: "#e2ba42",
   },
   text: {
     fontSize: 20,

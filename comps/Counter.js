@@ -1,19 +1,32 @@
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
-import { View, Button, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import { Button } from "react-native-paper";
 //
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "orange",
+    borderTopWidth: 1,
+    borderTopColor: "#e2ba42",
   },
   monitor: {
-    backgroundColor: "white",
+    color: "#e2ba42",
   },
   nav: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",
+  },
+  bot: {
+    backfaceVisibility: "hidden",
+  },
+  un: {
+    borderColor: "#e2ba42",
+    borderWidth: 2,
+    borderRadius: 9,
+  },
+  lab: {
+    color: "#e2ba42",
   },
 });
 //
@@ -52,8 +65,12 @@ export const PButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <View>
-      <Button onPress={() => dispatch(decrement())} title="prev" />
+    <View style={styles.bot}>
+      <View style={styles.un}>
+        <Button mode="outlined" onPress={() => dispatch(decrement())}>
+          <Text style={styles.lab}>&lArr; prev</Text>
+        </Button>
+      </View>
     </View>
   );
 };
@@ -63,8 +80,12 @@ export const NButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <View>
-      <Button onPress={() => dispatch(increment())} title="next" />
+    <View style={styles.bot}>
+      <View style={styles.un}>
+        <Button mode="outlined" onPress={() => dispatch(increment())}>
+          <Text style={styles.lab}>next &rArr;</Text>
+        </Button>
+      </View>
     </View>
   );
 };
