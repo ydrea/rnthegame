@@ -5,16 +5,19 @@ import { Card, TextInput } from "react-native-paper";
 const styles = StyleSheet.create({
   input: {
     width: 200,
-    padding: 8,
-    margin: 10,
+    height: 34,
     backgroundColor: "#fff",
-    fontSize: 20,
+    fontSize: 15,
   },
-  question: { backgroundColor: "darkorange", paddingHorizontal: 20 },
-  inputContainer: { backgroundColor: "orange", flex: 1 },
-  card: { backgroundColor: "yellow" },
+  question: { backgroundColor: "orange", paddingHorizontal: 20 },
+  inputContainer: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "baseline",
+    paddingVertical: 12,
+  },
 
-  submit: { width: 80 },
+  submit: { width: 100 },
 });
 
 //
