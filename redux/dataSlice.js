@@ -17,8 +17,8 @@ export const selectSculptures = (state) => state.dataJSON.sculptures;
 export const selectPlanets = (state) => state.dataJSON.planets;
 //
 
-export const selectSculptureByPid = (state, id) =>
-  state.dataJSON.locations.find((i) => i.id === id);
+export const selectSculptureById = (state, id) =>
+  state.dataJSON.sculptures.find((i) => i.id === id);
 
 export const selectPlanetByPid = (state, pid) =>
   state.dataJSON.planets.find((ii) => ii.pid === pid);

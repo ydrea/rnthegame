@@ -1,6 +1,9 @@
 import React from "react";
 import { Image, Text, View, Button, StyleSheet } from "react-native";
 import { Card, TextInput } from "react-native-paper";
+import { images } from "../data/images";
+import { useSelector } from "react-redux";
+import { selectCount } from "../redux/counterSlice";
 //
 const styles = StyleSheet.create({
   input: {
@@ -9,29 +12,34 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     fontSize: 15,
   },
-  question: { backgroundColor: "orange", paddingHorizontal: 20 },
+  img: {
+    width: 200,
+    height: 150,
+  },
+  question: {
+    paddingHorizontal: 20,
+  },
   inputContainer: {
     flexDirection: "row",
     justifyContent: "space-evenly",
     alignItems: "baseline",
     paddingVertical: 12,
   },
-
   submit: { width: 100 },
 });
 
 //
 function QCard({ sculpture, query, handleChange, handleSubmit }) {
+  // const path = `../assets/sculptures/${sculpture.img}`;
+  // console.log(path);
+  const count = useSelector(selectCount);
+
+  //
   return (
     <>
       <View style={styles.card}>
         <Text style={styles.question}>{sculpture.question}</Text>
-
-        <Image
-          style={{ width: 200, height: 150 }}
-          source={require(`../assets/sculptures/${sculpture.img}`)}
-        />
-        {console.log("path", `../assets/sculptures/${sculpture.img}`)}
+        <Image style={styles.img} source={images.sculptures[count]} />
         {sculpture.id > 0 ? (
           <View style={styles.inputContainer}>
             <View>
@@ -42,10 +50,9 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
                 value={query}
                 onChange={handleChange}
               />
-              <Button title="enter" onPress={() => handleSubmit()} />
             </View>
             <View style={styles.submit}>
-              {/* <Button title="enter" onPress={() => handleSubmit} /> */}
+              <Button title="enter" onPress={() => handleSubmit()} />
             </View>
           </View>
         ) : (
