@@ -1,35 +1,52 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
-import { Card, TextInput, Button } from "react-native-paper";
+import { Image, Text, View, Button, StyleSheet } from "react-native";
+import { Card, TextInput } from "react-native-paper";
+//
+const styles = StyleSheet.create({
+  input: {
+    width: 200,
+    padding: 8,
+    margin: 10,
+    backgroundColor: "#fff",
+    fontSize: 20,
+  },
+  question: { backgroundColor: "darkorange", paddingHorizontal: 20 },
+  inputContainer: { backgroundColor: "orange", flex: 1 },
+  card: { backgroundColor: "yellow" },
+
+  submit: { width: 80 },
+});
+
 //
 function QCard({ sculpture, query, handleChange, handleSubmit }) {
   return (
     <>
-      {/* <View> */}
-      <Card>
-        <Text>{sculpture.question}</Text>
+      <View style={styles.card}>
+        <Text style={styles.question}>{sculpture.question}</Text>
         <View>
           <Image source={require(`../assets/sculptures/${sculpture.img}`)} />
         </View>{" "}
         {sculpture.id > 0 ? (
-          <View>
-            <form className="form" onSubmit={handleSubmit}>
+          <View style={styles.inputContainer}>
+            <View>
               <TextInput
-                className="input"
+                style={styles.input}
                 placeholder="Enter response"
                 type="text"
                 value={query}
                 onChange={handleChange}
               />
-              <Button title="enter" type="submit" />
-            </form>
+            </View>
+            <View style={styles.submit}>
+              <Button title="enter" onPress={() => handleSubmit} />
+            </View>
           </View>
         ) : (
           <View>
             <Text>Start playing by clicking "Next" below </Text>
           </View>
         )}
-      </Card>
+      </View>
       {/* </View> */}
     </>
   );

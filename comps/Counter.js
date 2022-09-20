@@ -1,10 +1,25 @@
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
 import { View, Button, Text, StyleSheet } from "react-native";
-
+//
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "orange",
+  },
+  monitor: {
+    backgroundColor: "white",
+  },
+  nav: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+  },
+});
+//
 function Counter() {
   return (
-    <View>
+    <View style={styles.container}>
       <Monitor />
       <Switch />
     </View>
@@ -13,7 +28,7 @@ function Counter() {
 
 function Nav() {
   return (
-    <View>
+    <View style={styles.nav}>
       <PButton />
       <NButton />
     </View>
@@ -59,25 +74,9 @@ export const Monitor = () => {
 
   return (
     <View>
-      <Text style={styles.body}>broj {count}</Text>
+      <Text style={styles.monitor}>broj {count}</Text>
     </View>
   );
 };
 
 export default Counter;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    color: "white",
-    backgroundColor: "#323",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  body: {
-    backgroundColor: "white",
-  },
-  text: {
-    fontSize: 20,
-  },
-});

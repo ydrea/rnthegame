@@ -17,15 +17,8 @@ export default Header;
 const styles = StyleSheet.create({
   header: {
     color: "#fff",
-    padding: 2,
-    backgroundColor: "#121",
     alignItems: "center",
-    justifyContent: "center",
-  },
-  body: {
-    backgroundColor: "#fff",
-  },
-  text: {
-    fontSize: 20,
+    flex: 5,
+    paddingTop: 20,
   },
 });
