@@ -7,19 +7,17 @@ import { selectSculptures } from "../redux/dataSlice";
 import { selectCount } from "../redux/counterSlice";
 //
 import { View } from "react-native";
-//
+//local state
 function AGame() {
   const [query, querySet] = useState("");
   const [search, searchSet] = useState();
   const handleChange = (e) => {
     querySet(e.target.value);
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  //
+  const handleSubmit = () => {
     searchSet(query);
-    console.log(search);
     querySet("");
-    console.log(search);
   };
 
   //selectas
@@ -37,7 +35,11 @@ function AGame() {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      {search === sculpture.name ? <RCard sculpture={sculpture} /> : null}
+      {search === sculpture.name ? (
+        <RCard sculpture={sculpture} />
+      ) : (
+        <View>{/* <Text>zilch {count} </Text> */}</View>
+      )}
     </View>
   );
 }

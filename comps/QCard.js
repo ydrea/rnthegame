@@ -26,9 +26,12 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
     <>
       <View style={styles.card}>
         <Text style={styles.question}>{sculpture.question}</Text>
-        <View>
-          <Image source={require(`../assets/sculptures/${sculpture.img}`)} />
-        </View>{" "}
+
+        <Image
+          style={{ width: 200, height: 150 }}
+          source={require(`../assets/sculptures/${sculpture.img}`)}
+        />
+        {console.log("path", `../assets/sculptures/${sculpture.img}`)}
         {sculpture.id > 0 ? (
           <View style={styles.inputContainer}>
             <View>
@@ -39,9 +42,10 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
                 value={query}
                 onChange={handleChange}
               />
+              <Button title="enter" onPress={() => handleSubmit()} />
             </View>
             <View style={styles.submit}>
-              <Button title="enter" onPress={() => handleSubmit} />
+              {/* <Button title="enter" onPress={() => handleSubmit} /> */}
             </View>
           </View>
         ) : (
