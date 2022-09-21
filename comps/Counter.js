@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
 import { View, Text, StyleSheet } from "react-native";
-import { Button } from "react-native-paper";
+import Botun from "./Botun";
 //
 const styles = StyleSheet.create({
   container: {
@@ -65,13 +65,7 @@ export const PButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <View style={styles.bot}>
-      <View style={styles.un}>
-        <Button mode="outlined" onPress={() => dispatch(decrement())}>
-          <Text style={styles.lab}>&lArr; prev</Text>
-        </Button>
-      </View>
-    </View>
+    <Botun text="&lArr; prev" onPress={() => dispatch(decrement())}></Botun>
   );
 };
 
@@ -80,13 +74,7 @@ export const NButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <View style={styles.bot}>
-      <View style={styles.un}>
-        <Button mode="outlined" onPress={() => dispatch(increment())}>
-          <Text style={styles.lab}>next &rArr;</Text>
-        </Button>
-      </View>
-    </View>
+    <Botun text="next &rArr;" onPress={() => dispatch(increment())}></Botun>
   );
 };
 

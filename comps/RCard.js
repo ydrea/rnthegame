@@ -1,25 +1,24 @@
-import { View, Text, StyleSheet } from "react-native";
-import { Card } from "react-native-paper";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 //
 const styles = StyleSheet.create({
+  container: { backgroundColor: "#31328f" },
   question: {
     paddingHorizontal: 10,
     color: "#e2ba42",
   },
+  reply: { backgroundColor: "#31328f" },
 });
 //
 function RCard({ sculpture }) {
   return (
-    <View>
+    <View style={styles.container}>
       <View>
         <Text style={styles.question}>Correct!</Text>
       </View>
-      <Card>
-        <View>
-          <Text style={styles.question}>{sculpture.description}</Text>
-        </View>
-      </Card>
+      <View style={styles.reply}>
+        <Text style={styles.question}>{sculpture.description}</Text>
+      </View>
     </View>
   );
 }

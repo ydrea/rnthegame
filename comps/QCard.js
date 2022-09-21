@@ -4,6 +4,7 @@ import { Button, Card, TextInput } from "react-native-paper";
 import { images } from "../data/images";
 import { useSelector } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
+import Botun from "./Botun";
 //
 const styles = StyleSheet.create({
   input: {
@@ -28,17 +29,6 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
   submit: { width: 100 },
-  bot: {
-    backfaceVisibility: "hidden",
-  },
-  un: {
-    borderColor: "#e2ba42",
-    borderWidth: 2,
-    borderRadius: 9,
-  },
-  lab: {
-    color: "#e2ba42",
-  },
 });
 
 //
@@ -64,15 +54,7 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
                 onChange={handleChange}
               />
             </View>
-            <View style={styles.submit}>
-              <View style={styles.bot}>
-                <View style={styles.un}>
-                  <Button mode="outlined" onPress={() => handleSubmit()}>
-                    <Text style={styles.lab}>submit</Text>
-                  </Button>
-                </View>
-              </View>
-            </View>
+            <Botun text="submit" onPress={() => handleSubmit()}></Botun>
           </View>
         ) : (
           <View>

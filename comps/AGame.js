@@ -6,7 +6,7 @@ import RCard from "./RCard";
 import { selectSculptures } from "../redux/dataSlice";
 import { selectCount } from "../redux/counterSlice";
 //
-import { View } from "react-native";
+import { View, ScrollView, Text } from "react-native";
 //local state
 function AGame() {
   const [query, querySet] = useState("");
@@ -28,7 +28,7 @@ function AGame() {
   console.log(sculpture);
   // //
   return (
-    <View>
+    <ScrollView>
       <QCard
         sculpture={sculpture}
         query={query}
@@ -38,9 +38,11 @@ function AGame() {
       {search === sculpture.name ? (
         <RCard sculpture={sculpture} />
       ) : (
-        <View>{/* <Text>zilch {count} </Text> */}</View>
+        <View>
+          <Text>{count}</Text>
+        </View>
       )}
-    </View>
+    </ScrollView>
   );
 }
 

@@ -1,42 +1,27 @@
-import { View, StyleSheet } from "react-native";
-
-const ViewStyleProps = () => {
-  return (
-    <View style={styles.container}>
-      <View style={styles.top} />
-      <View style={styles.middle} />
-      <View style={styles.bottom} />
-    </View>
-  );
-};
-
+import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
+//
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "space-between",
-    backgroundColor: "#fff",
-    padding: 20,
-    margin: 10,
+  botun: {
+    backgroundColor: "#31328f",
+    borderColor: "#e2ba42",
+    borderWidth: 2,
+    borderRadius: 8,
+    padding: 5,
   },
-  top: {
-    flex: 0.3,
-    backgroundColor: "grey",
-    borderWidth: 5,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-  },
-  middle: {
-    flex: 0.3,
-    backgroundColor: "beige",
-    borderWidth: 5,
-  },
-  bottom: {
-    flex: 0.3,
-    backgroundColor: "pink",
-    borderWidth: 5,
-    borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 20,
+  label: {
+    color: "#e2ba42",
+    textAlign: "center",
   },
 });
+//
+function Botun({ text, onPress }) {
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <View style={styles.botun}>
+        <Text style={styles.label}>{text}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+}
 
-export default ViewStyleProps;
+export default Botun;
