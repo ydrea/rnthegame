@@ -10,43 +10,58 @@ import { View, ScrollView, Text } from "react-native";
 //local state
 function AGame() {
   const [query, querySet] = useState("");
-  const [search, searchSet] = useState();
+  const [search, searchSet] = useState("");
+  const [check, checkSet] = useState(false);
   //control query
   const handleChange = (e) => {
     querySet(e.target.value);
   };
-  //submit query to search
-  const handleSubmit = () => {
-    searchSet(query);
-    querySet("");
-  };
-
   //selectas
   const count = useSelector(selectCount);
   console.log(count);
   const sculptures = useSelector(selectSculptures);
   const sculpture = sculptures[`${count}`];
-  console.log(sculpture);
-  // //
+  // console.log(sculpture.name);
+  const ime = sculpture.name;
+  console.log(ime);
+
+  const checkIt = (ime, search, check) => {
+    if (search == ime) {
+      checkSet(!check);
+      console.log("hm?", check);
+      console.log(search);
+      console.log(ime);
+    }
+  };
+  //submit query to search
+  const handleSubmit = () => {
+    searchSet(query);
+    console.log(search);
+    checkIt();
+    querySet("");
+  };
+
+  //
   return (
-    // <ScrollView>
-    <>
-      <QCard
-        sculpture={sculpture}
-        query={query}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
-      {search == sculpture.name ? (
-        <ScrollView>
-          <RCard sculpture={sculpture} />
-        </ScrollView>
-      ) : (
+    <ScrollView>
+      <>
+        <QCard
+          sculpture={sculpture}
+          query={query}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+        />
         <View>
-          <Text></Text>
+          {!check ? (
+            <Text>{count}</Text>
+          ) : (
+            <View>
+              <RCard sculpture={sculpture} />
+            </View>
+          )}
         </View>
-      )}
-    </>
+      </>
+    </ScrollView>
   );
 }
 
