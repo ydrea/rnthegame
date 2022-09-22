@@ -3,9 +3,13 @@ import { View, StyleSheet } from "react-native";
 import AGame from "./AGame";
 import BGame from "./BGame";
 //
+
+//
 function Main({ drop }) {
   return (
-    <View style={styles.main}>{drop === "map" ? <BGame /> : <AGame />}</View>
+    <View style={styles.main}>
+      {drop === "planets" ? <BGame /> : <AGame />}
+    </View>
   );
 }
 

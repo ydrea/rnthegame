@@ -1,25 +1,44 @@
-import { View, StyleSheet } from "react-native";
-const styles = StyleSheet.create({
-  body: {
-    flex: 1,
-    alignItems: center,
-  },
-});
-const center = {
-  lat: 45.8144,
-  lng: 15.9814,
-};
+import { View, StyleSheet, Text } from "react-native";
+// import GlobalStyle from '../utils/GlobalStyle';
+import MapView from "react-native-maps";
 
-export default function Map() {
+export default function Mapa({ route }) {
+  const { city, lat, lng } = route.params;
+
   return (
     <View style={styles.body}>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      ></GoogleMap>
+      <Text
+        style={[
+          // GlobalStyle.CustomFont,
+          styles.text,
+        ]}
+      >
+        {city}
+      </Text>
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: lat,
+          longitude: lng,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+      />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  body: {
+    flex: 1,
+    alignItems: "center",
+  },
+  text: {
+    fontSize: 40,
+    margin: 10,
+  },
+  map: {
+    width: "100%",
+    height: "100%",
+  },
+});

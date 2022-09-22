@@ -1,22 +1,22 @@
 import { StatusBar } from "expo-status-bar";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./redux/store";
 //
-import Header from "./comps/Header";
-import Main from "./comps/Main";
-import Footer from "./comps/Footer";
-import { useState } from "react";
+import Navigator from "./routes/homeStack";
+//
+import "react-native-gesture-handler";
 //
 export default function App() {
-  const [drop, dropSet] = useState("monument");
+  //prettier-ignore
+  // const [drop, dropSet] = useState(
+  //   ["monuments", "planets", "l8r..."]
+  // );
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
-        <Header />
-        <Main drop={drop} />
-        <Footer />
+        <Navigator />
       </ReduxProvider>
     </View>
   );

@@ -6,7 +6,7 @@ function BGame() {
 
   return (
     <View>
-      <Text>Mapa</Text>
+      <Text>planets</Text>
     </View>
   );
 }
