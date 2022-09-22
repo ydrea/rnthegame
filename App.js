@@ -1,7 +1,5 @@
 import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text, View } from "react-native";
-//
-import { Provider as PaperProvider } from "react-native-paper";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./redux/store";
 //
@@ -16,11 +14,9 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
-        <PaperProvider>
-          <Header />
-          <Main drop={drop} />
-          <Footer />
-        </PaperProvider>
+        <Header />
+        <Main drop={drop} />
+        <Footer />
       </ReduxProvider>
     </View>
   );

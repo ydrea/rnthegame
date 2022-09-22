@@ -1,6 +1,4 @@
-import React from "react";
-import { Image, Text, View, StyleSheet } from "react-native";
-import { Button, Card, TextInput } from "react-native-paper";
+import { Image, Text, View, StyleSheet, TextInput } from "react-native";
 import { images } from "../data/images";
 import { useSelector } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
@@ -8,7 +6,7 @@ import Botun from "./Botun";
 //
 const styles = StyleSheet.create({
   input: {
-    width: 200,
+    width: 150,
     height: 34,
     backgroundColor: "#fff",
     fontSize: 15,
@@ -26,15 +24,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-evenly",
     alignItems: "baseline",
-    paddingVertical: 12,
+    paddingVertical: 6,
   },
-  submit: { width: 100 },
 });
 
 //
 function QCard({ sculpture, query, handleChange, handleSubmit }) {
-  // const path = `../assets/sculptures/${sculpture.img}`;
-  // console.log(path);
   const count = useSelector(selectCount);
 
   //
@@ -48,7 +43,7 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
             <View>
               <TextInput
                 style={styles.input}
-                placeholder="Enter response"
+                placeholder="First name"
                 type="text"
                 value={query}
                 onChange={handleChange}
@@ -64,7 +59,6 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
           </View>
         )}
       </View>
-      {/* </View> */}
     </>
   );
 }

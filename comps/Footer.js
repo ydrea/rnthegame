@@ -6,8 +6,10 @@ const styles = StyleSheet.create({
   footer: {
     color: "#e2ba42",
     flex: 1,
-    paddingBottom: 6,
-    marginBottom: 6,
+    // alignContent: "stretch",
+    // justifyContent: "space-between",
+    padding: 6,
+    margin: 6,
   },
 });
 //

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import QCard from "./QCard";
 import RCard from "./RCard";
@@ -11,10 +11,11 @@ import { View, ScrollView, Text } from "react-native";
 function AGame() {
   const [query, querySet] = useState("");
   const [search, searchSet] = useState();
+  //control query
   const handleChange = (e) => {
     querySet(e.target.value);
   };
-  //
+  //submit query to search
   const handleSubmit = () => {
     searchSet(query);
     querySet("");
@@ -28,21 +29,24 @@ function AGame() {
   console.log(sculpture);
   // //
   return (
-    <ScrollView>
+    // <ScrollView>
+    <>
       <QCard
         sculpture={sculpture}
         query={query}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      {search === sculpture.name ? (
-        <RCard sculpture={sculpture} />
+      {search == sculpture.name ? (
+        <ScrollView>
+          <RCard sculpture={sculpture} />
+        </ScrollView>
       ) : (
         <View>
-          <Text>{count}</Text>
+          <Text></Text>
         </View>
       )}
-    </ScrollView>
+    </>
   );
 }
 

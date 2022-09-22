@@ -5,29 +5,24 @@ import Botun from "./Botun";
 //
 const styles = StyleSheet.create({
   container: {
-    borderTopWidth: 1,
+    // borderTopWidth: 1,
     borderTopColor: "#e2ba42",
+    display: "flex",
+    alignItems: "flex-start",
+    justifyContent: "space-around",
   },
   monitor: {
     color: "#e2ba42",
+    padding: 6,
+    marginVertical: 6,
   },
   nav: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-around",
+    alignItems: "flex-start",
+    justifyContent: "space-between",
   },
-  bot: {
-    backfaceVisibility: "hidden",
-  },
-  un: {
-    borderColor: "#e2ba42",
-    borderWidth: 2,
-    borderRadius: 9,
-  },
-  lab: {
-    color: "#e2ba42",
-  },
+  botun: { marginHorizontal: 16 },
 });
 //
 function Counter() {
@@ -65,7 +60,9 @@ export const PButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <Botun text="&lArr; prev" onPress={() => dispatch(decrement())}></Botun>
+    <View style={styles.botun}>
+      <Botun text="&lArr; prev" onPress={() => dispatch(decrement())}></Botun>
+    </View>
   );
 };
 
@@ -74,7 +71,9 @@ export const NButton = () => {
   const count = useSelector(selectCount);
 
   return (
-    <Botun text="next &rArr;" onPress={() => dispatch(increment())}></Botun>
+    <View style={styles.botun}>
+      <Botun text="next &rArr;" onPress={() => dispatch(increment())}></Botun>
+    </View>
   );
 };
 
@@ -83,7 +82,7 @@ export const Monitor = () => {
 
   return (
     <View>
-      <Text style={styles.monitor}>broj {count}</Text>
+      <Text style={styles.monitor}>count {count}</Text>
     </View>
   );
 };

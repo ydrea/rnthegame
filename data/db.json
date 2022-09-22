@@ -19,7 +19,7 @@
       "name": "August",
       "surname": "Senoa",
       "question": "Enter the first name of the person that the monument represents",
-      "description": "`Tis Christmas. Plain and hill Under dense snowy chill; This intact vale Is pale, is pale. In the village, a light from a pane, Sweet pastries on table displayed, Father shots fires, words arcane, And the children jump gaily and play, Loudly screaming and running from joy On the little room`s floor, straw-adorned, Mother and children singing enjoy: `Couse the king of Heaven is born.",
+      "description": "`Tis Christmas.\n Plain and hill\n Under dense `n snowy chill;\n This intact vale\n Is pale, is pale.\n In the village, a light from a pane,\n Sweet pastries on table displayed,\n Father lights fires, words arcane,\n And the children jump gaily and play,\n Loudly screaming and running from joy\n On the little room`s floor, straw-adorned,\n Mother and children singing in joy:\n `Cause the king of Heaven is born.",
       "icon": "assets/ico/ping_1.png",
       "img": "assets/img/Senoa.jpg"
     },
@@ -30,7 +30,7 @@
       "name": "Antun Gustav",
       "surname": "Matos",
       "question": "Enter the first name of the person that the monument represents",
-      "description": "On the gallows. Dry as stick. On the jail wall. Wall of shame. Underneath it a criminal hole, Murder scene, dark as adultery. I saw somwehere that countryside skirt, Because my mother has such a face, And some lady has similar eyes To nice place my path me brought me! And instead of her, I jumped into the fatal hole      And with its blood sweat I wet My impertinent cheek as with tears. Because they hung my Croatia, Like a thief, while it erases her name, On I do not know who`s wish, an officer in jail!",
+      "description": "On the gallows.\n Dry as stick.\n On the jail wall. Wall of shame.\n Underneath it a criminal hole,\n Murder scene, dark as adultery.\n I saw somwehere that countryside skirt,\n Because my mother has such a face,\n And some lady has similar eyes\n To a nice place my path has brought me!\n And instead of her, I jumped into the fatal hole\n And with her sweet blood\n I wet My impertinent cheek as with tears.\n Because they hung my Croatia,\n Like a thief, while erasing her name\n On whose wish I do not know,\n Like an officer in jail!",
       "icon": "assets/ico/ping_2.png",
       "img": "assets/img/Matos.jpg"
     },
@@ -52,7 +52,7 @@
       "name": "Grgo",
       "surname": "Martic",
       "question": "Enter the first name of the person that the monument represents",
-      "description": "Sniff the days, don't dawn me. Stop heating me my hot sun. Eternal hills don't green yourselves. Do not bloom immortelle and basil, Sieze your dances darling friends. Untangle your merry gettogethers. Quit your singing my young shepherds. Put away the dips and pipes. Silence the fiddles and tambourines.",
+      "description": "Snuff the days, don't dawn on me.\n Stop heating me my hot sun.\n Eternal hills don't green yourselves.\n Do not bloom, myrthe nor basil,\n Sieze your dances my dear friends.\n Untangle your merry gettogethers.\n Quit your singing my young shepherds.\n Put away the dips and pipes.\n Silence the fiddles and tambourines.",
       "icon": "assets/ico/ping_4.png",
       "img": "assets/img/Martic.jpg"
     },
@@ -63,7 +63,7 @@
       "name": "Miroslav",
       "surname": "Krleza",
       "question": "Enter the first name of the person that the monument represents",
-      "description": "Tira-lira, tiralee, piped the flute under the gallows tree. Tira-lira, tiraloo, the gallows are for me and you. My hat`s at a rakish angle set, rain and wind my coverlet. Be Christens we or fiends of hell, for us will toll the felon`s bell. Thru` all times and eternity gallows are the remedy. Streams of blood will flow away, flow for ever and a day. Out of this hell there is no way, the lords grow fat, poor Tom must pay, scarlet May-time, bloody May. Tira-lira, tiralee, piped the flute under the gallows tree.",
+      "description": "Tira-lira, tiralee, piped the flute under the gallows tree.\n Tira-lira, tiraloo, the gallows are for me and you.\n My hat`s at a rakish angle set, rain and wind my coverlet.\n Be Christens we or fiends of hell, for us will toll the felon`s bell.\n Thru` all times and eternity, gallows are the remedy.\n Streams of blood will flow away, flow for ever and a day.\n Out of this hell there is no way, the lords grow fat, poor Tom must pay,\n Scarlet May-time, bloody May.\n Tira-lira, tiralee, piped the flute under the gallows tree.",
       "icon": "assets/ico/ping_5.png",
       "img": "assets/img/Krleza.jpg"
     },
@@ -74,7 +74,7 @@
       "name": "Marija",
       "surname": "Juric Zagorka",
       "question": "Enter the first name of the person that the monument represents",
-      "description": "”As I have told you before, the purpose of my life now is to search for proof that witches do not exist.” ”All right. But please allow me to make one request.” ”What is it?” ”May I join you in this dangerous venture?” She returned his warm, supplicating gaze: ”Yes, Hon. Captain. Please, be my ally.” ”I will devote my life to proving to the world that belief in witches—which had caused you so much pain, Contessa—is nothing but a terrible misapprehension.”",
+      "description": "”As I have told you before, the purpose of my life now is to search for proof that witches do not exist.”\n ”All right. But please allow me to make one request.”\n ”What is it?”\n ”May I join you in this dangerous venture?”\n She returned his warm, supplicating gaze: ”Yes, Hon. Captain. Please, be my ally.”\n ”I will devote my life to proving to the world that belief in witches—which had caused you so much pain, Contessa, is nothing but a terrible misapprehension.”",
       "icon": "assets/ico/ping_6.png",
       "img": "assets/img/Zagorka.jpg"
     },
@@ -85,7 +85,7 @@
       "name": "Nikola",
       "surname": "Tesla",
       "question": "Enter the first name of the person that the monument represents",
-      "description": "Tesla was born on July 10, 1856, in the Austrian Empire, now Croatia. After an academic career in Europe, he worked as a telegrapher and electrician before moving to the United States to work for Thomas Edison in 1884. Tesla invented, predicted or contributed to development of hundreds of technologies that play big parts in our daily lives: the remote control, neon and fluorescent lights, wireless transmission, computers, smartphones, laser beams, x-rays, robotics as well as the alternating current.",
+      "description": "Tesla was born on July 10, 1856, in the Austrian Empire, now Croatia. After an academic career in Europe, he worked as a telegrapher and electrician before moving to the United States to work for Thomas Edison in 1884.\n Tesla invented, predicted or contributed to development of hundreds of technologies that play big parts in our daily lives: the remote control, neon and fluorescent lights, wireless transmission, computers, smartphones, laser beams, x-rays, robotics as well as the alternating current.",
       "icon": "assets/ico/ping_7.png",
       "img": "assets/img/Tesla.jpg"
     },
