@@ -1,9 +1,9 @@
-Smrkni dane, ne ogrmio mi
-stani žarko negrijalo sunce
-Vječite gore ne zelenite ga,
-Ne cvatite smilje i bosilje,
-Moje drage ne igrajte druge,
-Razmrsite i vesela sijela,
-Ne pjevajte čobani mlađani,
-zaturite diple i svirale,
-Zatulite gusle i tambure.
+Smrkni dane, ne ogranuo mi,\n
+Stani žarko negrijalo sunce,\n
+Vječite gore ne zelenite ga,\n
+Ne cvatite smilje ni bosilje,\n
+Moje drage ne igrajte druge,\n
+Razmrsite i vesela sijela,\n
+Ne pjevajte čobani mlađani,\n
+Zaturite diple i svirale,\n
+Zatulite gusle i tambure...
