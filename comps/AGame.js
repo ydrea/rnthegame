@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import QCard from "./QCard";
 import RCard from "./RCard";
@@ -25,22 +25,16 @@ function AGame() {
   const ime = sculpture.name;
   console.log(ime);
 
-  const checkIt = (ime, search, check) => {
-    if (search == ime) {
-      checkSet(!check);
-      console.log("hm?", check);
-      console.log(search);
-      console.log(ime);
-    }
-  };
   //submit query to search
   const handleSubmit = () => {
     searchSet(query);
-    console.log(search);
-    checkIt();
+    console.log("search", search);
+    checkSet(true);
+    console.log("check", check);
     querySet("");
   };
-
+  //prettier-ignore
+  useEffect(()=>{checkSet(false)},[count])
   //
   return (
     <ScrollView>
