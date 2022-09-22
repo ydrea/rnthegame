@@ -18,23 +18,22 @@ function AGame() {
   };
   //selectas
   const count = useSelector(selectCount);
-  console.log(count);
   const sculptures = useSelector(selectSculptures);
   const sculpture = sculptures[`${count}`];
-  // console.log(sculpture.name);
   const ime = sculpture.name;
-  console.log(ime);
 
   //submit query to search
   const handleSubmit = () => {
     searchSet(query);
-    console.log("search", search);
+    //flip the switches
     checkSet(true);
-    console.log("check", check);
     querySet("");
   };
-  //prettier-ignore
-  useEffect(()=>{checkSet(false)},[count])
+  //a bit of...
+  useEffect(() => {
+    //...cleanup for the next one
+    checkSet(false);
+  }, [count]);
   //
   return (
     <ScrollView>
