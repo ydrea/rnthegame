@@ -42,10 +42,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  body: {
-    color: "#e2ba42",
-  },
-  text: {
-    fontSize: 20,
-  },
+  // body: {
+  //   color: "#e2ba42",
+  // },
+  // text: {
+  //   fontSize: 20,
+  // },
 });

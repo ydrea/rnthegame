@@ -10,8 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-// console.log(navigation);
-// {() => Linking.openURL("https://maps.google.com")}
+//
 function Header({ navigation }) {
   return (
     <View style={styles.header}>
