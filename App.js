@@ -8,15 +8,20 @@ import Main from "./comps/Main";
 import Footer from "./comps/Footer";
 import { useState } from "react";
 //
+
+import { NavigationContainer } from "@react-navigation/native";
+//
 export default function App() {
   const [drop, dropSet] = useState("monument");
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
-        <Header />
-        <Main drop={drop} />
-        <Footer />
+        <NavigationContainer>
+          <Header />
+          <Main drop={drop} />
+          <Footer />
+        </NavigationContainer>
       </ReduxProvider>
     </View>
   );
