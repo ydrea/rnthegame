@@ -3,24 +3,31 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./redux/store";
 //
-import Header from "./comps/Header";
-import Main from "./comps/Main";
-import Footer from "./comps/Footer";
-import { useState } from "react";
+import React, { useState } from "react";
 //
 
 import { NavigationContainer } from "@react-navigation/native";
+
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./screens/Home";
+import Map from "./screens/Map";
+
 //
 export default function App() {
-  const [drop, dropSet] = useState("monument");
+  const Stack = createNativeStackNavigator();
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
         <NavigationContainer>
-          <Header />
-          <Main drop={drop} />
-          <Footer />
+          <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen
+              name="Home"
+              component={Home}
+              options={{ title: "Game" }}
+            />
+            <Stack.Screen name="Map" component={Map} />
+          </Stack.Navigator>{" "}
         </NavigationContainer>
       </ReduxProvider>
     </View>
