@@ -1,7 +1,12 @@
 import React from "react";
+import { View, Text } from "react-native";
 
 function Map() {
-  return <div>Map</div>;
+  return (
+    <View>
+      <Text>mapa</Text>
+    </View>
+  );
 }
 
 export default Map;

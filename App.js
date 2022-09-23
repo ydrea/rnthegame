@@ -27,7 +27,7 @@ export default function App() {
               options={{ title: "Game" }}
             />
             <Stack.Screen name="Map" component={Map} />
-          </Stack.Navigator>{" "}
+          </Stack.Navigator>
         </NavigationContainer>
       </ReduxProvider>
     </View>

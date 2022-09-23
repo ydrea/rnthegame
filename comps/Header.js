@@ -1,7 +1,6 @@
 import { Text, Linking, View, StyleSheet } from "react-native";
 import Botun from "./Botun";
 //
-
 const styles = StyleSheet.create({
   header: {
     backgroundColor: "orange",
@@ -11,18 +10,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-//
+// console.log(navigation);
+// {() => Linking.openURL("https://maps.google.com")}
 function Header({ navigation }) {
-  console.log(navigation);
   return (
     <View style={styles.header}>
-      <Botun
-        text="map"
-        onPress={() => navigation.navigate("Map")}
-        // {() => Linking.openURL("https://maps.google.com")}
-      ></Botun>
+      <Botun text="map" onPress={() => navigation.push("Map")}></Botun>
     </View>
   );
 }
-
 export default Header;
