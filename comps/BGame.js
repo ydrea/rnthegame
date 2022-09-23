@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import Map from "./Mapa";
 
 //
 function BGame() {
@@ -6,7 +7,7 @@ function BGame() {
 
   return (
     <View>
-      <Text>Mapa</Text>
+      <Map />
     </View>
   );
 }

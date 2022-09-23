@@ -1,25 +1,44 @@
-import { View, StyleSheet } from "react-native";
-const styles = StyleSheet.create({
-  body: {
-    flex: 1,
-    alignItems: center,
-  },
-});
-const center = {
-  lat: 45.8144,
-  lng: 15.9814,
-};
-
+import * as React from "react";
+import MapView, { Callout, Marker } from "react-native-maps";
+import { StyleSheet, Text, View, Dimensions } from "react-native";
+//
 export default function Map() {
   return (
-    <View style={styles.body}>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      ></GoogleMap>
+    <View style={styles.container}>
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: 45.815,
+          longitude: 15.981,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+      >
+        <Marker
+          coordinate={{
+            latitude: 45.815,
+            longitude: 15.9811,
+          }}
+          pinColor="#31328f"
+        >
+          <Callout>
+            <Text>alo!</Text>
+          </Callout>
+        </Marker>
+      </MapView>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  map: {
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+  },
+});

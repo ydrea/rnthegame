@@ -9,7 +9,7 @@ import Footer from "./comps/Footer";
 import { useState } from "react";
 //
 export default function App() {
-  const [drop, dropSet] = useState("monument");
+  const [drop, dropSet] = useState("map");
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
