@@ -1,3 +1,4 @@
+import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 // import GlobalStyle from '../utils/GlobalStyle';
 import MapView from "react-native-maps";

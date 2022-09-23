@@ -1,9 +1,11 @@
+import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./redux/store";
 //
 import Navigator from "./routes/homeStack";
+import { NavigationContainer } from "@react-navigation/native";
 //
 import "react-native-gesture-handler";
 //
@@ -16,7 +18,10 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
-        <Navigator />
+        <NavigationContainer> 
+          <Navigator />
+          </NavigationContainer>
+       
       </ReduxProvider>
     </View>
   );

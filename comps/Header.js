@@ -1,3 +1,4 @@
+import React from "react";
 import { Text, Linking, View, StyleSheet } from "react-native";
 import Botun from "./Botun";
 //

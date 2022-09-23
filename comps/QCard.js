@@ -1,3 +1,4 @@
+import React from "react";
 import { Image, Text, View, StyleSheet, TextInput } from "react-native";
 import { images } from "../data/images";
 import { useSelector } from "react-redux";
