@@ -23,8 +23,8 @@ export default function Map() {
   const [region, regionSet] = useState({
     latitude: 45.8125,
     longitude: 15.9824,
-    latitudeDelta: 0.1922,
-    longitudeDelta: 0.1421,
+    latitudeDelta: 0.1222,
+    longitudeDelta: 0.0421,
   });
 
   function onRegionChange(region) {
