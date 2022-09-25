@@ -10,5 +10,7 @@ npm-debug.*
 *.orig.*
 web-build/
 .env.*
+# alt
+MapMod.js
 # macOS
 .DS_Store

@@ -7,6 +7,7 @@ function Header({ drop, dropSet }) {
   return (
     <View style={styles.header}>
       <Botun
+        style={styles.botun}
         text="map"
         onPress={() => Linking.openURL("https://maps.google.com")}
       ></Botun>
@@ -23,4 +24,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flex: 1,
   },
+  botun: { margin: 10, position: "absolute" },
 });

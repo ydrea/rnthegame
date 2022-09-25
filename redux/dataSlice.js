@@ -14,7 +14,10 @@ export const dataSlice = createSlice({
 export const { setIt, reSet } = dataSlice.actions;
 export const selectEm = (state) => state;
 export const selectSculptures = (state) => state.dataJSON.sculptures;
-export const selectPlanets = (state) => state.dataJSON.planets;
+// export const selectMarkers = (state) =>
+//   state.dataJSON.sculptures.map((m) => m.coordinate.latitude);
+// console.log("um", m);
+// export const selectPlanets = (state) => state.dataJSON.planets;
 //
 
 export const selectSculptureById = (state, id) =>
