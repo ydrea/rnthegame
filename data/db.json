@@ -81,7 +81,7 @@
     {
       "id": 7,
       "title": "tesla",
-      "coordinate": { "latitude": 45.8, "longitude": 15.94 },
+      "coordinate": { "latitude": 45.8, "longitude": 15.98 },
       "name": "Nikola",
       "surname": "Tesla",
       "question": "Enter the first name of the person that the monument represents",
