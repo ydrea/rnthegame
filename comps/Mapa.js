@@ -11,31 +11,18 @@ export default function Map() {
   console.log(count);
   const sculptures = useSelector(selectSculptures);
   const coordinates = sculptures.map((m) => m.coordinate);
-  // console.log("coo", coordinates);
   //select it
   const sculpture = sculptures[`${count}`];
   const marker = sculpture.coordinate;
-  // console.log(marker);
-  const lat = sculpture.coordinate.latitude;
-  const lng = sculpture.coordinate.longitude;
-  // console.log(lat, lng);
-  const [fcam, fcamSet] = useState(true);
   //
   const _map = useRef(null);
-  //
-  const newCamera = {
-    center: {
-      ...marker,
-    },
-    zoom: 28,
-    pitch: 0,
-  };
 
   useEffect(() => {
-    if (_map.current && fcam) {
-      _map.current.animateCamera(newCamera, { duration: 2000 });
+    if (_map.current) {
+      //prettier-ignore
+      const newCamera = {center: {...marker}, zoom: 88};
+      _map.current.animateCamera(newCamera, { duration: 7000 });
     }
-    console.log("vir", marker);
   }, [count]);
   //
   return (
@@ -44,14 +31,10 @@ export default function Map() {
         style={styles.map}
         ref={_map}
         region={{
-          // latitude: 45.8,
-          // longitude: 15.981,
           ...marker,
-          latitudeDelta: 0.0663,
-          longitudeDelta: 0.02001,
+          latitudeDelta: 0.003,
+          longitudeDelta: 0.001,
         }}
-        camera={{ ...marker, zoom: 10 }}
-        mapType={"satellite"}
       >
         {coordinates.map((i, index) => (
           <Marker
@@ -85,17 +68,17 @@ const styles = StyleSheet.create({
   },
 });
 
-const CMarker = () => (
-  <View
-    style={{
-      paddingVertical: 10,
-      paddingHorizontal: 30,
-      backgroundColor: "#31328f",
-      borderColor: "#eee",
-      borderRadius: 5,
-      elevation: 10,
-    }}
-  >
-    <Text style={{ color: "#fff" }}>{index}</Text>
-  </View>
-);
+// const CMarker = () => (
+//   <View
+//     style={{
+//       paddingVertical: 10,
+//       paddingHorizontal: 30,
+//       backgroundColor: "#31328f",
+//       borderColor: "#eee",
+//       borderRadius: 5,
+//       elevation: 10,
+//     }}
+//   >
+//     <Text style={{ color: "#fff" }}>{index}</Text>
+//   </View>
+// );
