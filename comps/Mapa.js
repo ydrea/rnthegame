@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import MapView, { Callout, Marker, Polyline } from "react-native-maps";
 import { StyleSheet, Text, View, Dimensions } from "react-native";
 import { useSelector } from "react-redux";
-import { selectMarkers, selectSculptures } from "../redux/dataSlice";
+import { selectSculptures } from "../redux/dataSlice";
 import { selectCount } from "../redux/counterSlice";
 //
 export default function Map() {
@@ -17,11 +17,12 @@ export default function Map() {
   //
   const _map = useRef(null);
 
+  //prettier-ignore
+  const newCamera = {center: {...marker}, zoom:17, height: 111 };
+
   useEffect(() => {
     if (_map.current) {
-      //prettier-ignore
-      const newCamera = {center: {...marker}, zoom: 88};
-      _map.current.animateCamera(newCamera, { duration: 7000 });
+      _map.current.animateCamera(newCamera, { duration: 4900 });
     }
   }, [count]);
   //
@@ -30,11 +31,16 @@ export default function Map() {
       <MapView
         style={styles.map}
         ref={_map}
+        showsUserLocation={true}
+        showsMyLocationButton={true}
+        minZoomLevel={0}
+        maxZoomLevel={20}
         region={{
           ...marker,
-          latitudeDelta: 0.003,
-          longitudeDelta: 0.001,
+          latitudeDelta: 0.006,
+          longitudeDelta: 0.003,
         }}
+        camera={{ ...marker, zoom: 5, height: 222 }}
       >
         {coordinates.map((i, index) => (
           <Marker
