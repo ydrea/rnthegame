@@ -40,7 +40,7 @@ export default function Map() {
         maxZoomLevel={20}
         region={{
           ...marker,
-          latitudeDelta: 0.006,
+          latitudeDelta: 0.016,
           longitudeDelta: 0.003,
         }}
         camera={{ ...marker, zoom: 5, height: 222 }}
@@ -60,7 +60,12 @@ export default function Map() {
           </Marker>
         ))}
 
-        <Polyline coordinates={cordinates} strokeWidth={3} />
+        <Polyline
+          coordinates={cordinates}
+          geodesic={true}
+          strokeWidth={6}
+          strokeColor={"#33128f"}
+        />
       </MapView>
     </View>
   );

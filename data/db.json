@@ -3,7 +3,7 @@
     {
       "id": 0,
       "title": "kumica",
-      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "coordinate": { "latitude": 45.814007, "longitude": 15.976833 },
       "name": "Kumica",
       "surname": "sPlaca",
       "question": " ",
@@ -15,7 +15,7 @@
     {
       "id": 1,
       "title": "senoa",
-      "coordinate": { "latitude": 45.81, "longitude": 15.992 },
+      "coordinate": { "latitude": 45.813769, "longitude": 15.981709 },
       "name": "August",
       "surname": "Senoa",
       "question": "Enter the first name of the person that the monument represents",
@@ -25,41 +25,42 @@
     },
     {
       "id": 2,
-      "title": "matos",
-      "coordinate": { "latitude": 45.8145, "longitude": 15.98 },
-      "name": "Antun Gustav",
-      "surname": "Matos",
-      "question": "Enter the first name of the person that the monument represents",
-      "description": "On the gallows.\n Dry as stick.\n On the jail wall. Wall of shame.\n Underneath it a criminal hole,\n Murder scene, dark as adultery.\n I saw somwehere that countryside skirt,\n Because my mother has such a face,\n And some lady has similar eyes\n To a nice place my path has brought me!\n And instead of her, I jumped into the fatal hole\n And with her sweet blood\n I wet My impertinent cheek as with tears.\n Because they hung my Croatia,\n Like a thief, while erasing her name\n On whose wish I do not know,\n Like an officer in jail!",
-      "icon": "assets/ico/ping_2.png",
-      "img": "assets/img/Matos.jpg"
-    },
-    {
-      "id": 3,
-      "title": "ujevic",
-      "coordinate": { "latitude": 45.81, "longitude": 15.98 },
-      "name": "Tin",
-      "surname": "Ujevic",
-      "question": "Enter the first name of the person that the monument represents",
-      "description": "Who will understand why? No one will!\n I rail at God each time I pray!\n Within my flesh my soul lies ill.\n A woman makes me waste away.\n Instead of staying in my shell\n when young and green I sought renown\n in the wide world - but here in hell\n now wear this thorn and wormwood crown.\n With each tear, more tears long to blend,\n consoling each sad syllable.\n Aye, Hope is all: but here`s an end,\n my life, my world, my hope - farewell.",
-      "icon": "assets/ico/ping_3.png",
-      "img": "assets/img/Ujevic.jpg"
-    },
-    {
-      "id": 4,
       "title": "martic",
-      "coordinate": { "latitude": 45.8, "longitude": 15.993 },
+      "coordinate": { "latitude": 45.812292, "longitude": 15.988636 },
       "name": "Grgo",
       "surname": "Martic",
       "question": "Enter the first name of the person that the monument represents",
       "description": "Snuff the days, don't dawn on me.\n Stop heating me my hot sun.\n Eternal hills don't green yourselves.\n Do not bloom, myrthe nor basil,\n Sieze your dances my dear friends.\n Untangle your merry gettogethers.\n Quit your singing my young shepherds.\n Put away the dips and pipes.\n Silence the fiddles and tambourines.",
-      "icon": "assets/ico/ping_4.png",
+      "icon": "assets/ico/ping_2.png",
       "img": "assets/img/Martic.jpg"
+    },
+    {
+      "id": 3,
+      "title": "strossmayer",
+      "coordinate": { "latitude": 45.808589, "longitude": 15.978673 },
+      "name": "Josip",
+      "surname": "Strossmayer",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "Strossmayer was born in Osijek to a Croatian family. \n  After having  graduated theology at the Catholic seminary in Đakovo and earning a PhD in philosophy at a high seminary in Budapest at the age of 20, he became a professor of Canonic law at the University of Vienna. \n Known as one of the most notable opponents of papal infallibility and defender of protestantism, Strossmayer was also a believer in Yugoslavia and a founder of the Yugoslav Academy of Sciences and Arts.",
+      "icon": "assets/ico/ping_3.png",
+      "img": "assets/img/Strossmayer.jpg"
+    },
+
+    {
+      "id": 4,
+      "title": "ujevic",
+      "coordinate": { "latitude": 45.811936, "longitude": 15.973186 },
+      "name": "Tin",
+      "surname": "Ujevic",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "Who will understand why? No one will!\n I rail at God each time I pray!\n Within my flesh my soul lies ill.\n A woman makes me waste away.\n Instead of staying in my shell\n when young and green I sought renown\n in the wide world - but here in hell\n now wear this thorn and wormwood crown.\n With each tear, more tears long to blend,\n consoling each sad syllable.\n Aye, Hope is all: but here`s an end,\n my life, my world, my hope - farewell.",
+      "icon": "assets/ico/ping_4.png",
+      "img": "assets/img/Ujevic.jpg"
     },
     {
       "id": 5,
       "title": "krleza",
-      "coordinate": { "latitude": 45.8236, "longitude": 15.977 },
+      "coordinate": { "latitude": 45.817622, "longitude": 15.971192 },
       "name": "Miroslav",
       "surname": "Krleza",
       "question": "Enter the first name of the person that the monument represents",
@@ -69,8 +70,19 @@
     },
     {
       "id": 6,
+      "title": "matos",
+      "coordinate": { "latitude": 45.814197, "longitude": 15.974382 },
+      "name": "Antun Gustav",
+      "surname": "Matos",
+      "question": "Enter the first name of the person that the monument represents",
+      "description": "On the gallows.\n Dry as stick.\n On the jail wall. Wall of shame.\n Underneath it a criminal hole,\n Murder scene, dark as adultery.\n I saw somwehere that countryside skirt,\n Because my mother has such a face,\n And some lady has similar eyes\n To a nice place my path has brought me!\n And instead of her, I jumped into the fatal hole\n And with her sweet blood\n I wet My impertinent cheek as with tears.\n Because they hung my Croatia,\n Like a thief, while erasing her name\n On whose wish I do not know,\n Like an officer in jail!",
+      "icon": "assets/ico/ping_2.png",
+      "img": "assets/img/Matos.jpg"
+    },
+    {
+      "id": 7,
       "title": "zagorka",
-      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "coordinate": { "latitude": 45.815092, "longitude": 15.976362 },
       "name": "Marija",
       "surname": "Juric Zagorka",
       "question": "Enter the first name of the person that the monument represents",
@@ -79,20 +91,9 @@
       "img": "assets/img/Zagorka.jpg"
     },
     {
-      "id": 7,
-      "title": "tesla",
-      "coordinate": { "latitude": 45.8, "longitude": 15.98 },
-      "name": "Nikola",
-      "surname": "Tesla",
-      "question": "Enter the first name of the person that the monument represents",
-      "description": "Tesla was born on July 10, 1856, in the Austrian Empire, now Croatia. After an academic career in Europe, he worked as a telegrapher and electrician before moving to the United States to work for Thomas Edison in 1884.\n Tesla invented, predicted or contributed to development of hundreds of technologies that play big parts in our daily lives: the remote control, neon and fluorescent lights, wireless transmission, computers, smartphones, laser beams, x-rays, robotics as well as the alternating current.",
-      "icon": "assets/ico/ping_7.png",
-      "img": "assets/img/Tesla.jpg"
-    },
-    {
       "id": 8,
       "title": "fin",
-      "coordinate": { "latitude": 45.8135, "longitude": 15.9814 },
+      "coordinate": { "latitude": 45.814007, "longitude": 15.976833 },
       "name": "*",
       "surname": "sPlaca",
       "question": "Well played! Enter YOUR name.",
