@@ -8,20 +8,23 @@ import { selectCount } from "../redux/counterSlice";
 export default function Map() {
   //selectass
   const count = useSelector(selectCount);
-  console.log(count);
+  // console.log(count);
   const sculptures = useSelector(selectSculptures);
-  const coordinates = sculptures.map((m) => m.coordinate);
+  const cordinates = sculptures.map((m) => m.coordinate);
   //select it
   const sculpture = sculptures[`${count}`];
   const marker = sculpture.coordinate;
   //
+  const tal = sculpture.coordinate.latitude;
+  const nol = sculpture.coordinate.longitude;
+  console.log(tal);
+  //
   const _map = useRef(null);
-
-  //prettier-ignore
-  const newCamera = {center: {...marker}, zoom:17, height: 111 };
 
   useEffect(() => {
     if (_map.current) {
+      //prettier-ignore
+      const newCamera = {center: {...marker}, zoom:17, height: 111 };
       _map.current.animateCamera(newCamera, { duration: 4900 });
     }
   }, [count]);
@@ -42,7 +45,7 @@ export default function Map() {
         }}
         camera={{ ...marker, zoom: 5, height: 222 }}
       >
-        {coordinates.map((i, index) => (
+        {cordinates.map((i, index) => (
           <Marker
             key={index + 1}
             coordinate={{
@@ -56,6 +59,8 @@ export default function Map() {
             </Callout>
           </Marker>
         ))}
+
+        <Polyline coordinates={cordinates} strokeWidth={3} />
       </MapView>
     </View>
   );
