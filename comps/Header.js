@@ -9,7 +9,7 @@ function Header({ drop, dropSet }) {
       <Botun
         style={styles.botun}
         text="map"
-        onPress={() => Linking.openURL("https://maps.google.com")}
+        onPress={() => dropSet(!drop)}
       ></Botun>
     </View>
   );

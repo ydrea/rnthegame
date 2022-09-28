@@ -6,10 +6,6 @@ const styles = StyleSheet.create({
   footer: {
     color: "#e2ba42",
     flex: 1,
-    // alignContent: "stretch",
-    // justifyContent: "space-between",
-    padding: 6,
-    margin: 6,
   },
 });
 //

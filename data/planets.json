@@ -1,0 +1,54 @@
+{
+  "planets": [
+    {
+      "pid": 0,
+      "name": "sun",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9812 }
+    },
+    {
+      "pid": 1,
+      "name": "mercur",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9813 }
+    },
+    {
+      "pid": 2,
+      "name": "venus",
+      "coordinate": { "latitude": 45.8141, "longitude": 15.9813 }
+    },
+    {
+      "pid": 3,
+      "name": "earth",
+      "coordinate": { "latitude": 45.8142, "longitude": 15.9813 }
+    },
+    {
+      "pid": 4,
+      "name": "mars",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9814 }
+    },
+    {
+      "pid": 5,
+      "name": "jupiter",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9815 }
+    },
+    {
+      "pid": 6,
+      "name": "saturn",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9816 }
+    },
+    {
+      "pid": 7,
+      "name": "uranus",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9817 }
+    },
+    {
+      "pid": 8,
+      "name": "neptune",
+      "coordinate": { "latitude": 45.8139, "longitude": 15.9818 }
+    },
+    {
+      "pid": 9,
+      "name": "pluto",
+      "coordinate": { "latitude": 45.8141, "longitude": 15.9819 }
+    }
+  ]
+}

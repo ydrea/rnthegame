@@ -11,7 +11,6 @@ npm-debug.*
 web-build/
 .env.*
 # alt
-MapMod.js
-Map.js
+MapMod.js, Map.js, Play.js
 # macOS
 .DS_Store
