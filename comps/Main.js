@@ -2,11 +2,11 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import AGame from "./AGame";
 import BGame from "./BGame";
-import { useSelector, useDispatch } from "react-redux";
-import { selectToggle, toggle } from "../redux/dropSlice";
+import { useSelector } from "react-redux";
+import { selectToggle } from "../redux/dropSlice";
 
 //
-function Main({ drop }) {
+function Main() {
   const toggleSwitch = useSelector(selectToggle);
 
   return (
