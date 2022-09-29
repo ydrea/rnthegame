@@ -6,17 +6,16 @@ import { store } from "./redux/store";
 import Header from "./comps/Header";
 import Main from "./comps/Main";
 import Footer from "./comps/Footer";
-import { useState } from "react";
+import React from "react";
 //
 export default function App() {
-  const [drop, dropSet] = useState("map");
   return (
     //
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
-        <Header dropSet={dropSet} />
-        <Main drop={drop} />
+        <Header />
+        <Main />
         <Footer />
       </ReduxProvider>
     </View>

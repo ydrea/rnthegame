@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import QCard from "./QCard";
 import RCard from "./RCard";
 //
 import { selectSculptures } from "../redux/dataSlice";
 import { selectCount } from "../redux/counterSlice";
+import { incrementPoint } from "../redux/pointSlice";
+
 //
 import { View, ScrollView, Text } from "react-native";
 //local state
@@ -12,6 +14,8 @@ function AGame() {
   const [query, querySet] = useState("");
   const [search, searchSet] = useState("");
   const [check, checkSet] = useState(false);
+  const dispatch = useDispatch();
+
   //control query
   const handleChange = (e) => {
     querySet(e.target.value);
@@ -28,6 +32,8 @@ function AGame() {
     //flip the switches
     checkSet(true);
     querySet("");
+    //award points
+    dispatch(incrementPoint());
   };
   //a bit of...
   useEffect(() => {
