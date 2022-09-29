@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
 import { View, Text, StyleSheet } from "react-native";
 import Botun from "./Botun";
+import { Svic } from "./Svic";
 //
 const styles = StyleSheet.create({
   container: {
@@ -30,6 +31,7 @@ function Counter() {
     <View style={styles.container}>
       <Monitor />
       <Switch />
+      <Svic />
     </View>
   );
 }

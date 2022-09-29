@@ -23,9 +23,14 @@ export default function Map() {
 
   useEffect(() => {
     if (_map.current) {
-      //prettier-ignore
-      const newCamera = {center: {...marker}, zoom:17, height: 111 };
-      _map.current.animateCamera(newCamera, { duration: 4900 });
+      const newCamera = {
+        center: { ...marker },
+        zoom: 12,
+        altitude: 0,
+        pitch: 0,
+        heading: 0,
+      };
+      _map.current.animateCamera(newCamera, { duration: 4000 });
     }
   }, [count]);
   //
@@ -43,7 +48,7 @@ export default function Map() {
           latitudeDelta: 0.016,
           longitudeDelta: 0.003,
         }}
-        camera={{ ...marker, zoom: 5, height: 222 }}
+        camera={{ ...marker, zoom: 0, altitude: 0, pitch: 0, heading: 0 }}
       >
         {cordinates.map((i, index) => (
           <Marker

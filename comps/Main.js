@@ -13,8 +13,7 @@ export default Main;
 
 const styles = StyleSheet.create({
   main: {
-    flex: 3,
-    // backgroundColor: "#fff",
+    flex: 4.5,
     alignItems: "center",
     justifyContent: "center",
   },

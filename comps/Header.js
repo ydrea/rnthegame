@@ -9,7 +9,7 @@ function Header({ drop, dropSet }) {
       <Botun
         style={styles.botun}
         text="map"
-        onPress={() => dropSet(!drop)}
+        onPress={() => dropSet("map")}
       ></Botun>
     </View>
   );
