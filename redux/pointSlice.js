@@ -1,7 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const points = new Map();
+points.set("Kumica");
+
 const initialState = {
   count: 0,
+  points,
 };
 
 // prettier-ignore
@@ -10,9 +14,12 @@ export const pointSlice = createSlice({
   initialState,
   reducers: {
     incrementPoint: (state) => {state.count += 1},
-  },
+   addToPoints: (state, action) => {points.set(action.payload)}
+ },
 });
 
-export const { incrementPoint } = pointSlice.actions;
+export const { incrementPoint, addToPoints } = pointSlice.actions;
 export const selectPoint = (state) => state.point.count;
+export const selectPoints = (state) => state.point.points;
+
 export default pointSlice.reducer;
