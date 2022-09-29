@@ -46,7 +46,7 @@ function AGame() {
         />
         <View>
           {!check ? (
-            <Text>{count}</Text>
+            <View></View>
           ) : (
             <View>
               <RCard sculpture={sculpture} />

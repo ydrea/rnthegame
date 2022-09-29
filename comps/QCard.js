@@ -9,12 +9,18 @@ const styles = StyleSheet.create({
     width: 150,
     height: 34,
     backgroundColor: "#fff",
-    fontSize: 15,
+    fontSize: 16,
   },
+  imgcontainer: { justifyContent: "center" },
   img: {
-    // paddingHorizontal: 30,
-    width: 200,
-    height: 150,
+    width: 324,
+    height: 240,
+    padding: 10,
+    backgroundColor: "#e2ba42",
+    borderColor: "#e2ba42",
+    borderStyle: "solid",
+    borderWidth: 5,
+    marginVertical: 10,
   },
   question: {
     paddingHorizontal: 10,
@@ -26,6 +32,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     alignItems: "baseline",
     paddingVertical: 6,
+    marginVertical: 10,
   },
 });
 
@@ -38,13 +45,15 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
     <>
       <View style={styles.card}>
         <Text style={styles.question}>{sculpture.question}</Text>
-        <Image style={styles.img} source={images.sculptures[count]} />
+        <View style={styles.imgcontainer}>
+          <Image style={styles.img} source={images.sculptures[count]} />
+        </View>
         {sculpture.id > 0 ? (
           <View style={styles.inputContainer}>
             <View>
               <TextInput
                 style={styles.input}
-                placeholder="First name"
+                placeholder="response"
                 type="text"
                 value={query}
                 onChange={handleChange}
