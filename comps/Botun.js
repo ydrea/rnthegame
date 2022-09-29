@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   },
   label: {
     color: "#e2ba42",
+    fontSize: 18,
     textAlign: "center",
   },
 });
