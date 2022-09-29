@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  label: { color: "#e2ba42" },
+  label: { color: "#e2ba42", backgroundColor: "#33128f" },
 });
 //
 export const Svic = () => {

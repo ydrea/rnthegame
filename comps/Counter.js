@@ -13,10 +13,11 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "space-around",
   },
+  bottom: { flexDirection: "row" },
   monitor: {
     color: "#e2ba42",
     padding: 6,
-    marginVertical: 6,
+    fontSize: 30,
   },
   nav: {
     display: "flex",
@@ -29,10 +30,14 @@ const styles = StyleSheet.create({
 //
 function Counter() {
   return (
-    <View style={styles.container}>
-      <Monitor />
-      <Switch />
-      <Svic />
+    <View>
+      <View style={styles.container}>
+        <Switch />
+      </View>
+      <View style={styles.bottom}>
+        <Svic />
+        <Monitor />
+      </View>
     </View>
   );
 }
@@ -60,7 +65,7 @@ export const Switch = () => {
 
 export const PButton = () => {
   const dispatch = useDispatch();
-  const count = useSelector(selectCount);
+  // const count = useSelector(selectCount);
 
   return (
     <View style={styles.botun}>
@@ -71,7 +76,7 @@ export const PButton = () => {
 
 export const NButton = () => {
   const dispatch = useDispatch();
-  const count = useSelector(selectCount);
+  // const count = useSelector(selectCount);
 
   return (
     <View style={styles.botun}>
@@ -84,10 +89,19 @@ export const Monitor = () => {
   const count = useSelector(selectCount);
   const point = useSelector(selectPoint);
   return (
-    <View>
-      <Text style={styles.monitor}>
+    <View style={styles.bottom}>
+      {/* <Botun style={styles.monitor} text={point}></Botun> */}
+      <Text
+        style={{
+          fontSize: 22,
+          color: "#e2ba42",
+          marginLeft: 33,
+          backgroundColor: "#33128f",
+        }}
+      >
         {point}/{count}
       </Text>
+      {/* <Botun style={styles.monitor} text={count}></Botun> */}
     </View>
   );
 };
