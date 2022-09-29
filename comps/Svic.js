@@ -29,13 +29,15 @@ export const Svic = () => {
     <View style={styles.container}>
       <Switch
         trackColor={{ false: "#767577", true: "#81b0ff" }}
-        thumbColor={isSelected ? "#red" : "#yellow"}
+        thumbColor={toggleSwitch ? "#red" : "#yellow"}
         ios_backgroundColor="#3e3e3e"
         // onValueChange={dispatch(setIsEnabled())}
-        value={isSelected}
+        value={toggleSwitch}
         onChange={handleFavCheck}
       />
-      <Text style={styles.label}>switch to {isSelected ? "Map" : "Game"}</Text>
+      <Text style={styles.label}>
+        switch to {toggleSwitch ? "Game" : "Map"}
+      </Text>
     </View>
   );
 };
