@@ -14,9 +14,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   monitor: {
-    color: "#e2ba42",
-    padding: 6,
-    marginVertical: 6,
+    color: "#31328f",
   },
   nav: {
     display: "flex",

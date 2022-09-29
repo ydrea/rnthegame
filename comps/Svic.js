@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Text, View, Switch, StyleSheet } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
+import { selectCount } from "../redux/counterSlice";
 import { selectToggle, toggle } from "../redux/dropSlice";
+import { selectPoint } from "../redux/pointSlice";
 //
 const styles = StyleSheet.create({
   container: {
@@ -14,8 +16,9 @@ const styles = StyleSheet.create({
 });
 //
 export const Svic = () => {
-  const [isSelected, setIsSelected] = useState(false);
-
+  const point = useSelector(selectPoint);
+  const count = useSelector(selectCount);
+  //
   const toggleSwitch = useSelector(selectToggle);
   console.log("to gle", toggleSwitch);
   const dispatch = useDispatch();
@@ -36,7 +39,8 @@ export const Svic = () => {
         onChange={handleFavCheck}
       />
       <Text style={styles.label}>
-        switch to {toggleSwitch ? "Game" : "Map"}
+        switch to {toggleSwitch ? "Game" : "Map"} :: || :: points {point}/
+        {count}
       </Text>
     </View>
   );
