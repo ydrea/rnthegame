@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   question: {
     paddingHorizontal: 10,
     color: "#e2ba42",
+    fontSize: 20,
   },
   inputContainer: {
     flexDirection: "row",

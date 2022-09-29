@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   question: {
     paddingHorizontal: 10,
     color: "#e2ba42",
+    fontSize: 18,
   },
   reply: { backgroundColor: "#31328f" },
 });
