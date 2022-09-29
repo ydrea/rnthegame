@@ -15,7 +15,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ReduxProvider store={store}>
-        {/* <Header dropSet={dropSet} /> */}
+        <Header dropSet={dropSet} />
         <Main drop={drop} />
         <Footer />
       </ReduxProvider>

@@ -1,28 +1,15 @@
-import { Text, Linking, View, StyleSheet } from "react-native";
-import Botun from "./Botun";
+import { View, StyleSheet } from "react-native";
 //
 
 //
-function Header({ drop, dropSet }) {
-  return (
-    <View style={styles.header}>
-      <Botun
-        style={styles.botun}
-        text="map"
-        onPress={() => dropSet("map")}
-      ></Botun>
-    </View>
-  );
+function Header() {
+  return <View style={styles.header}></View>;
 }
 
 export default Header;
 
 const styles = StyleSheet.create({
   header: {
-    color: "#fff",
-    alignItems: "baseline",
-    justifyContent: "center",
-    flex: 1,
+    flex: 0.4,
   },
-  botun: { margin: 10, position: "absolute" },
 });
