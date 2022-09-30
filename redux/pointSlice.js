@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-const points = new Set();
-points.add("Kumica");
+import produce from "immer";
+//
+// const points = new Set();
+// points.add("Kumica");
 
 const initialState = {
   // count: 0,
-  points,
+  points: [],
 };
 
 // prettier-ignore
@@ -14,7 +15,9 @@ export const pointSlice = createSlice({
   initialState,
   reducers: {
     // incrementPoint: (state) => {state.count += 1},
-   addToPoints: (state, action) => {points.add(action.payload)},
+   addToPoints: (state, action) => {
+        // let newPoints = [...points]
+      state.points.push(action.payload)},
  },
 });
 

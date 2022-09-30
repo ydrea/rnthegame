@@ -5,7 +5,7 @@ import RCard from "./RCard";
 //
 import { selectSculptures } from "../redux/dataSlice";
 import { selectCount } from "../redux/counterSlice";
-import { incrementPoint } from "../redux/pointSlice";
+import { addToPoints } from "../redux/pointSlice";
 
 //
 import { View, ScrollView, Text } from "react-native";
@@ -33,7 +33,7 @@ function AGame() {
     checkSet(true);
     querySet("");
     //award points
-    dispatch(incrementPoint());
+    dispatch(addToPoints());
   };
   //a bit of...
   useEffect(() => {

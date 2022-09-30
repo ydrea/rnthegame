@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
 import { selectToggle, toggle } from "../redux/dropSlice";
 import { selectPoints } from "../redux/pointSlice";
+import { selectSculptures } from "../redux/dataSlice";
 //
 const styles = StyleSheet.create({
   container: {
@@ -16,11 +17,11 @@ const styles = StyleSheet.create({
 });
 //
 export const Svic = () => {
-  // const point = useSelector(selectPoint);
+  const sculptures = useSelector(selectSculptures);
+  console.log("length", sculptures.length);
   const points = useSelector(selectPoints);
-  console.log("Set", points.size);
+  console.log("Set", points.length);
   const count = useSelector(selectCount);
-  //
   const toggleSwitch = useSelector(selectToggle);
   console.log("togle", toggleSwitch);
   const dispatch = useDispatch();
@@ -42,8 +43,8 @@ export const Svic = () => {
       />
       <Text style={styles.label}>
         {" "}
-        switch to {toggleSwitch ? "Game" : "Map"} ::......:: points{" "}
-        {points.size}/{count}
+        switch to {toggleSwitch ? "Game" : "Map"} ::......:: points
+        {points.length}/{sculptures.length}
       </Text>
     </View>
   );
