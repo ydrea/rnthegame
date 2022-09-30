@@ -15,6 +15,5 @@ export const dropSlice = createSlice({
 export const { toggle } = dropSlice.actions;
 //selectors
 export const selectToggle = (state) => state.drop.selected;
-console.log(selectToggle);
 //reducer
 export default dropSlice.reducer;

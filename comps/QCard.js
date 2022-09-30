@@ -1,8 +1,89 @@
+import { useEffect, useState } from "react";
+//
 import { Image, Text, View, StyleSheet, TextInput } from "react-native";
 import { images } from "../data/images";
 import { useSelector } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
 import Botun from "./Botun";
+//
+import { selectSculptures } from "../redux/dataSlice";
+import { addToPoints } from "../redux/pointSlice";
+//
+function QCard() {
+  //selectax
+  const count = useSelector(selectCount);
+  const sculptures = useSelector(selectSculptures);
+  const sculpture = sculptures[`${count}`];
+  const ime = sculpture.name;
+  //
+  const [query, querySet] = useState("");
+  //control query
+  const handleChange = (e) => {
+    querySet(e.target.value);
+    console.log(query);
+  };
+  //submit query to search
+  // const handleSubmit = () => {
+  //
+  //   searchSet(query);
+  //   console.log(search);
+  //flip the switches
+
+  // if (search == ime) {
+  //   checkSet(true);
+  //   //award points
+  //   dispatch(addToPoints());
+  // }
+  // querySet("");
+  // };
+
+  //a bit of...
+  // useEffect(() => {
+  //   handleSubmit();
+
+  //...cleanup for the next one
+  // checkSet(false);
+  // }, [count, search, query]);
+  //
+
+  //
+  return (
+    <>
+      <View style={styles.card}>
+        <Text style={styles.question}>{sculpture.question}</Text>
+        <View style={styles.imgcontainer}>
+          <Image style={styles.img} source={images.sculptures[count]} />
+        </View>
+        {sculpture.id > 0 && sculpture.id < sculptures.length - 1 ? (
+          <View style={styles.inputContainer}>
+            <View>
+              <TextInput
+                style={styles.input}
+                placeholder="response"
+                type="text"
+                value={query}
+                onChange={handleChange}
+              />
+            </View>
+            <Botun
+              text="submit"
+              // onPress={() => handleSubmit()}
+            ></Botun>
+          </View>
+        ) : (
+          <View>
+            <Text style={styles.question}>
+              Start playing by clicking on one of the buttons below{" "}
+            </Text>
+          </View>
+        )}
+      </View>
+    </>
+  );
+}
+
+export default QCard;
+
 //
 const styles = StyleSheet.create({
   input: {
@@ -35,42 +116,3 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
 });
-
-//
-function QCard({ sculpture, query, handleChange, handleSubmit }) {
-  const count = useSelector(selectCount);
-
-  //
-  return (
-    <>
-      <View style={styles.card}>
-        <Text style={styles.question}>{sculpture.question}</Text>
-        <View style={styles.imgcontainer}>
-          <Image style={styles.img} source={images.sculptures[count]} />
-        </View>
-        {sculpture.id > 0 && sculpture.id < 8 ? (
-          <View style={styles.inputContainer}>
-            <View>
-              <TextInput
-                style={styles.input}
-                placeholder="response"
-                type="text"
-                value={query}
-                onChange={handleChange}
-              />
-            </View>
-            <Botun text="submit" onPress={() => handleSubmit()}></Botun>
-          </View>
-        ) : (
-          <View>
-            <Text style={styles.question}>
-              Start playing by clicking on one of the buttons below{" "}
-            </Text>
-          </View>
-        )}
-      </View>
-    </>
-  );
-}
-
-export default QCard;

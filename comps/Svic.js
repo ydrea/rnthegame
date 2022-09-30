@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
 //
 export const Svic = () => {
   const sculptures = useSelector(selectSculptures);
-  console.log("length", sculptures.length);
+  // console.log("length", sculptures.length);
   const points = useSelector(selectPoints);
-  console.log("Set", points.length);
+  // console.log("Set", points.length);
   const count = useSelector(selectCount);
   const toggleSwitch = useSelector(selectToggle);
-  console.log("togle", toggleSwitch);
+  // console.log("togle", toggleSwitch);
   const dispatch = useDispatch();
   //
   const handleFavCheck = () => {
