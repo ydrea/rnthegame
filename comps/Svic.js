@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Text, View, Switch, StyleSheet } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
@@ -36,12 +36,13 @@ export const Svic = () => {
         trackColor={{ false: "#767577", true: "#81b0ff" }}
         thumbColor={toggleSwitch ? "#red" : "#yellow"}
         ios_backgroundColor="#3e3e3e"
-        // onValueChange={dispatch(setIsEnabled())}
+        style={{ transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }] }}
         value={toggleSwitch}
         onChange={handleFavCheck}
       />
       <Text style={styles.label}>
-        switch to {toggleSwitch ? "Game" : "Map"} :: || :: points {point}/
+        {" "}
+        switch to {toggleSwitch ? "Game" : "Map"} ::......:: points {point}/
         {count}
       </Text>
     </View>

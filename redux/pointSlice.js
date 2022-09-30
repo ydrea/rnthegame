@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const points = new Map();
-points.set("Kumica");
+const points = new Set();
+points.add("Kumica");
 
 const initialState = {
   count: 0,
@@ -14,7 +14,7 @@ export const pointSlice = createSlice({
   initialState,
   reducers: {
     incrementPoint: (state) => {state.count += 1},
-   addToPoints: (state, action) => {points.set(action.payload)}
+   addToPoints: (state, action) => {points.add(action.payload)},
  },
 });
 
