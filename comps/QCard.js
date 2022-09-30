@@ -48,7 +48,7 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
         <View style={styles.imgcontainer}>
           <Image style={styles.img} source={images.sculptures[count]} />
         </View>
-        {sculpture.id > 0 ? (
+        {sculpture.id > 0 && sculpture.id < 8 ? (
           <View style={styles.inputContainer}>
             <View>
               <TextInput
@@ -64,7 +64,7 @@ function QCard({ sculpture, query, handleChange, handleSubmit }) {
         ) : (
           <View>
             <Text style={styles.question}>
-              Start playing by clicking "Next" below{" "}
+              Start playing by clicking on one of the buttons below{" "}
             </Text>
           </View>
         )}

@@ -43,7 +43,7 @@ export const Svic = () => {
       />
       <Text style={styles.label}>
         {" "}
-        switch to {toggleSwitch ? "Game" : "Map"} ::......:: points
+        switch to {toggleSwitch ? "Game" : "Map"} :......: points{"   "}
         {points.length}/{sculptures.length}
       </Text>
     </View>

@@ -28,18 +28,26 @@ function AGame() {
 
   //submit query to search
   const handleSubmit = () => {
+    console.log(query);
     searchSet(query);
+    console.log(search);
     //flip the switches
-    checkSet(true);
-    querySet("");
-    //award points
-    dispatch(addToPoints());
+
+    // if (search == ime) {
+    //   checkSet(true);
+    //   //award points
+    //   dispatch(addToPoints());
+    // }
+    // querySet("");
   };
+
   //a bit of...
   useEffect(() => {
+    handleSubmit();
+
     //...cleanup for the next one
-    checkSet(false);
-  }, [count]);
+    // checkSet(false);
+  }, [count, search, query]);
   //
   return (
     <ScrollView>

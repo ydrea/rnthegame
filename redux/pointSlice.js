@@ -1,11 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import produce from "immer";
 //
-// const points = new Set();
-// points.add("Kumica");
-
 const initialState = {
-  // count: 0,
   points: [],
 };
 
@@ -18,7 +14,11 @@ export const pointSlice = createSlice({
    addToPoints: (state, action) => {
         // let newPoints = [...points] 
         // if !include bla...
-      state.points.push(action.payload)},
+      state.points.push(action.payload)
+    //   const unique = (points)=> {
+    //     return Array.from(new Set(points));
+    //   }
+    },
  },
 });
 
