@@ -16,7 +16,8 @@ export const pointSlice = createSlice({
   reducers: {
     // incrementPoint: (state) => {state.count += 1},
    addToPoints: (state, action) => {
-        // let newPoints = [...points]
+        // let newPoints = [...points] 
+        // if !include bla...
       state.points.push(action.payload)},
  },
 });
