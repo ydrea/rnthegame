@@ -2,48 +2,60 @@ import { useEffect, useState } from "react";
 //
 import { Image, Text, View, StyleSheet, TextInput } from "react-native";
 import { images } from "../data/images";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { selectCount } from "../redux/counterSlice";
 import Botun from "./Botun";
 //
-import { selectSculptures } from "../redux/dataSlice";
-import { addToPoints } from "../redux/pointSlice";
+import {
+  selectSculptures,
+  selectCheck,
+  selectPoints,
+  addToPoints,
+  checkIt,
+} from "../redux/dataSlice";
+// import { addToPoints, selectPoints } from "../redux/pointSlice";
 //
 function QCard() {
+  const dispatch = useDispatch();
   //selectax
   const count = useSelector(selectCount);
   const sculptures = useSelector(selectSculptures);
   const sculpture = sculptures[`${count}`];
   const ime = sculpture.name;
+  console.log("ime:", ime);
+  const points = useSelector(selectPoints);
+  console.log("points:", points);
+  const check = useSelector(selectCheck);
   //
   const [query, querySet] = useState("");
+  const [search, searchSet] = useState("");
   //control query
-  const handleChange = (e) => {
-    querySet(e.target.value);
-    console.log(query);
-  };
+  console.log("query:", query);
   //submit query to search
-  // const handleSubmit = () => {
-  //
-  //   searchSet(query);
-  //   console.log(search);
-  //flip the switches
-
-  // if (search == ime) {
-  //   checkSet(true);
-  //   //award points
-  //   dispatch(addToPoints());
-  // }
-  // querySet("");
-  // };
+  const handleSubmit = () => {
+    searchSet(query.trim());
+    console.log("search-2:", search);
+    dispatch(addToPoints(search));
+    console.log("points-2:", points);
+    dispatch(checkIt());
+    console.log("check-2:", check);
+    //flip the switches
+    if (search == ime) {
+      dispatch(checkIt(true));
+      console.log("check:", check);
+      //award points
+    } else {
+      console.log("nijee");
+    }
+  };
 
   //a bit of...
-  // useEffect(() => {
-  //   handleSubmit();
-
-  //...cleanup for the next one
-  // checkSet(false);
-  // }, [count, search, query]);
+  useEffect(() => {
+    querySet("");
+    // ...cleanup for the next one
+    dispatch(checkIt(false));
+    console.log("check-2:", check);
+  }, [count]);
   //
 
   //
@@ -62,13 +74,14 @@ function QCard() {
                 placeholder="response"
                 type="text"
                 value={query}
-                onChange={handleChange}
+                onChangeText={(value) => {
+                  querySet(value);
+                  console.log("query-2", query);
+                }}
               />
+              <Text style={styles.question}>{query}</Text>
             </View>
-            <Botun
-              text="submit"
-              // onPress={() => handleSubmit()}
-            ></Botun>
+            <Botun text="submit" onPress={() => handleSubmit()}></Botun>
           </View>
         ) : (
           <View>

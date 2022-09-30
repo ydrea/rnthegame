@@ -15,7 +15,7 @@ function AGame() {
   const sculpture = sculptures[`${count}`];
   const ime = sculpture.name;
   const check = useSelector(selectCheck);
-
+  console.log("MU", check);
   //
   return (
     <ScrollView>

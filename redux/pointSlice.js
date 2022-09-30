@@ -10,10 +10,8 @@ export const pointSlice = createSlice({
   name: "points",
   initialState,
   reducers: {
-    searchAndCompare: (state, action)=>{
-
-    },
-   addToPoints: (state, action) => {
+  check: (state) => {state.selected = !state.selected},
+  addToPoints: (state, action) => {
       state.points.push(action.payload)},
 
  },

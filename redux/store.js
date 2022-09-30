@@ -7,7 +7,7 @@ import pointReducer from "./pointSlice";
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    dataJSON: dataReducer,
+    data: dataReducer,
     drop: dropReducer,
     point: pointReducer,
   },
