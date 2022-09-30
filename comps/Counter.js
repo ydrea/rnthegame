@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement, selectCount } from "../redux/counterSlice";
-import { selectPoint } from "../redux/pointSlice";
+import { selectPoints } from "../redux/pointSlice";
 import { View, Text, StyleSheet } from "react-native";
 import Botun from "./Botun";
 import { Svic } from "./Svic";
@@ -80,11 +80,11 @@ export const NButton = () => {
 
 export const Monitor = () => {
   const count = useSelector(selectCount);
-  const point = useSelector(selectPoint);
+  const points = useSelector(selectPoints);
   return (
     <View>
       <Text style={styles.monitor}>
-        {point}/{count}
+        {points}/{count}
       </Text>
     </View>
   );

@@ -11,4 +11,8 @@ export const store = configureStore({
     drop: dropReducer,
     point: pointReducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
