@@ -3,7 +3,7 @@ import { addToPoints, useSelector, useDispatch } from "react-redux";
 import QCard from "./QCard";
 import RCard from "./RCard";
 //
-import { View, ScrollView, Text } from "react-native";
+import { View, ScrollView } from "react-native";
 import { selectCount } from "../redux/counterSlice";
 import {
   selectPoints,
@@ -41,7 +41,7 @@ function AGame() {
         addToPoints({
           id: count,
           check: !check,
-          points: search,
+          search: search,
         })
       );
       console.log("nijee");
