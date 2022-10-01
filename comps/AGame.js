@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { addToPoints, useSelector, useDispatch } from "react-redux";
 import QCard from "./QCard";
 import RCard from "./RCard";
@@ -20,7 +20,6 @@ function AGame() {
   // const checkR = useSelector(selectCheck);
   // console.log("check Redux", checkR);
   //local
-  // const [point, pointSet] = useState(0);
   const [check, checkSet] = useState(false);
   const [query, querySet] = useState("");
   const [search, searchSet] = useState("");
@@ -31,7 +30,7 @@ function AGame() {
   };
 
   //test block
-  const handleSubmit = () => {
+  const handleSubmit = useCallback(() => {
     cleanUp();
     searchSet(query);
     if (query === imeR) {
@@ -40,10 +39,10 @@ function AGame() {
       dispatch(addOne());
       console.log("pointR2", pointR);
     } else {
-      console.log("nich");
+      console.log("zilch");
     }
-  };
-  //a bit of...
+  }, [query]);
+  //a bit of CiP...
   useEffect(() => {
     querySet("");
     checkSet(false);
