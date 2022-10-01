@@ -20,7 +20,7 @@ function AGame() {
   const ime = sculpture.name;
   console.log("ime:", ime);
   const points = useSelector(selectPoints);
-  console.log("points:", points.length);
+  console.log("points:", points);
   const check = useSelector(selectCheck);
   console.log("check", check);
   //local
@@ -35,18 +35,18 @@ function AGame() {
   const handleSubmit = () => {
     cleanUp();
     searchSet(query);
-    if (search === ime) {
-      //
-      dispatch(
-        addToPoints({
-          id: count,
-          check: !check,
-          search: search,
-        })
-      );
-      console.log("nijee");
-    }
+    // if (search === ime) {
+    //
+    dispatch(
+      addToPoints({
+        id: count,
+        check: !check,
+        search: search,
+      })
+    );
+    // console.log("nijee");
   };
+  // };
   //
   //a bit of...
   useEffect(() => {
