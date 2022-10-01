@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 export const Svic = () => {
   const sculptures = useSelector(selectSculptures);
   // console.log("length", sculptures.length);
-  const points = useSelector(selectPoints);
+  const pointsR = useSelector(selectPoints);
   // console.log("Set", points.length);
   const count = useSelector(selectCount);
   const toggleSwitch = useSelector(selectToggle);
@@ -44,7 +44,7 @@ export const Svic = () => {
       <Text style={styles.label}>
         {" "}
         switch to {toggleSwitch ? "Game" : "Map"} :......: points{"   "}
-        {points.length}/{sculptures.length}
+        {pointsR}/{sculptures.length - 2}
       </Text>
     </View>
   );

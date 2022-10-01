@@ -1,24 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 //
 const initialState = {
-  points: [],
-  check: false,
-  search: "",
+  points: 0,
 };
 // prettier-ignore
 export const pointSlice = createSlice({
   name: "points",
   initialState,
   reducers: {
-  check: (state) => {state.selected = !state.selected},
-  addToPoints: (state, action) => {
-      state.points.push(action.payload)},
+  addOne: (state) => {state.points += 1},
 
  },
 });
 
-export const { addToPoints } = pointSlice.actions;
+export const { addOne } = pointSlice.actions;
 export const selectPoints = (state) => state.point.points;
-export const selectCheck = (state) => state.point.check;
 
 export default pointSlice.reducer;

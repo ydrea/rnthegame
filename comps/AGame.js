@@ -5,25 +5,23 @@ import RCard from "./RCard";
 //
 import { View, ScrollView } from "react-native";
 import { selectCount } from "../redux/counterSlice";
-import {
-  selectPoints,
-  selectSculptures,
-  selectCheck,
-} from "../redux/dataSlice";
-
+import { selectSculptures } from "../redux/dataSlice";
+import { addOne, selectPoints } from "../redux/pointSlice";
 function AGame() {
   const dispatch = useDispatch();
   //selectax
   const count = useSelector(selectCount);
   const sculptures = useSelector(selectSculptures);
   const sculpture = sculptures[`${count}`];
-  const ime = sculpture.name;
-  console.log("ime:", ime);
-  const points = useSelector(selectPoints);
-  console.log("points:", points);
-  const check = useSelector(selectCheck);
-  console.log("check", check);
+  const imeR = sculpture.name;
+  console.log("ime:", imeR);
+  const pointR = useSelector(selectPoints);
+  console.log("pointR1:", pointR);
+  // const checkR = useSelector(selectCheck);
+  // console.log("check Redux", checkR);
   //local
+  // const [point, pointSet] = useState(0);
+  const [check, checkSet] = useState(false);
   const [query, querySet] = useState("");
   const [search, searchSet] = useState("");
   //control query
@@ -31,30 +29,25 @@ function AGame() {
     querySet(query.trim());
     console.log("query:", query);
   };
-  //play block
+
+  //test block
   const handleSubmit = () => {
     cleanUp();
     searchSet(query);
-    // if (search === ime) {
-    //
-    dispatch(
-      addToPoints({
-        id: count,
-        check: !check,
-        search: search,
-      })
-    );
-    // console.log("nijee");
+    if (query === imeR) {
+      console.log("=", search, imeR);
+      checkSet(true);
+      dispatch(addOne());
+      console.log("pointR2", pointR);
+    } else {
+      console.log("nich");
+    }
   };
-  // };
-  //
   //a bit of...
   useEffect(() => {
-    // ...cleanup for the next one
     querySet("");
+    checkSet(false);
   }, [count]);
-  //
-
   //
   return (
     <ScrollView>

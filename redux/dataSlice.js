@@ -3,13 +3,13 @@ import importedData from "../data/db.json";
 
 export const dataSlice = createSlice({
   name: "loc",
-  initialState: { importedData, search: [], check: false, id: null },
+  initialState: { importedData, search: [], checkR: false, id: null },
   reducers: {
     addToPoints: (state, action) => {
       const novi = {
         points: action.payload.points,
         id: action.payload.id,
-        check: true,
+        checkR: true,
       };
       state.points.push(novi);
     },

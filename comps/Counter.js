@@ -81,6 +81,7 @@ export const NButton = () => {
 export const Monitor = () => {
   const count = useSelector(selectCount);
   const points = useSelector(selectPoints);
+  console.log("monitor", points);
   return (
     <View>
       <Text style={styles.monitor}>
