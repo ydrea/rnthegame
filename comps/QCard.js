@@ -1,64 +1,22 @@
-import { useEffect, useState } from "react";
 //
 import { Image, Text, View, StyleSheet, TextInput } from "react-native";
 import { images } from "../data/images";
-import { useSelector, useDispatch } from "react-redux";
-import { selectCount } from "../redux/counterSlice";
 import Botun from "./Botun";
 //
-import {
-  selectSculptures,
-  selectCheck,
-  selectPoints,
-  addToPoints,
-  checkIt,
-} from "../redux/dataSlice";
-// import { addToPoints, selectPoints } from "../redux/pointSlice";
+import { useSelector } from "react-redux";
+import { selectCount } from "../redux/counterSlice";
+import { selectSculptures, selectCheck } from "../redux/dataSlice";
 //
-function QCard() {
-  const dispatch = useDispatch();
-  //selectax
+function QCard({ handleSubmit, query, querySet }) {
+  //
   const count = useSelector(selectCount);
   const sculptures = useSelector(selectSculptures);
   const sculpture = sculptures[`${count}`];
   const ime = sculpture.name;
-  console.log("ime:", ime);
-  const points = useSelector(selectPoints);
-  console.log("points:", points);
   const check = useSelector(selectCheck);
-  //
-  const [query, querySet] = useState("");
-  const [search, searchSet] = useState("");
-  //control query
-  console.log("query:", query);
-  //submit query to search
-  const handleSubmit = () => {
-    searchSet(query.trim());
-    console.log("search-2:", search);
-    dispatch(addToPoints(search));
-    console.log("points-2:", points);
-    dispatch(checkIt());
-    console.log("check-2:", check);
-    //flip the switches
-    if (search == ime) {
-      dispatch(checkIt(true));
-      console.log("check:", check);
-      //award points
-    } else {
-      console.log("nijee");
-    }
-  };
-
-  //a bit of...
-  useEffect(() => {
-    querySet("");
-    // ...cleanup for the next one
-    dispatch(checkIt(false));
-    console.log("check-2:", check);
-  }, [count]);
+  // console.log("MU", check);
   //
 
-  //
   return (
     <>
       <View style={styles.card}>
@@ -76,7 +34,6 @@ function QCard() {
                 value={query}
                 onChangeText={(value) => {
                   querySet(value);
-                  console.log("query-2", query);
                 }}
               />
               <Text style={styles.question}>{query}</Text>

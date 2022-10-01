@@ -5,16 +5,18 @@ export const dataSlice = createSlice({
   name: "loc",
   initialState: { importedData, points: [], check: false, search: "" },
   reducers: {
-    checkIt: (state) => {
-      state.check = !state.check;
-    },
     addToPoints: (state, action) => {
-      state.points.push(action.payload);
+      const novi = {
+        points: action.payload.points,
+        id: action.payload.id,
+        check: true,
+      };
+      state.points.push(novi);
     },
   },
 });
 
-export const { checkIt, addToPoints } = dataSlice.actions;
+export const { addToPoints } = dataSlice.actions;
 export const selectEm = (state) => state;
 export const selectSculptures = (state) => state.data.importedData.sculptures;
 export const selectPoints = (state) => state.data.points;
