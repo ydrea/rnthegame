@@ -25,15 +25,25 @@ function AGame() {
   const sculptures = useSelector(selectSculptures);
   const sculpture = sculptures[`${count}`];
   const ime = sculpture.name;
-
+  //control query
+  const cleanUp = () => {
+    const quiry = query.trim();
+    console.log("quiry:", quiry);
+  };
+  cleanUp();
   //submit query to search
   const handleSubmit = () => {
+    cleanUp();
     searchSet(query);
     //flip the switches
-    checkSet(true);
-    querySet("");
-    //award points
-    dispatch(addToPoints());
+    if (search === ime) {
+      checkSet(true);
+      querySet("");
+      //award points
+      dispatch(addToPoints());
+    } else {
+      console.log("nie");
+    }
   };
   //a bit of...
   useEffect(() => {
