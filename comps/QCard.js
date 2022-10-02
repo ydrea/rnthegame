@@ -26,9 +26,9 @@ function QCard({ handleSubmit, query, querySet }) {
         </View>
         {sculpture.id > 0 && sculpture.id < sculptures.length - 1 ? (
           <View style={styles.inputContainer}>
-            <View>
+            <View style={styles.input}>
               <TextInput
-                style={styles.input}
+                style={styles.inpuText}
                 placeholder="response"
                 type="text"
                 value={query}
@@ -57,8 +57,11 @@ export default QCard;
 //
 const styles = StyleSheet.create({
   input: {
+    paddingTop: 5,
     width: 150,
-    height: 34,
+    height: 38,
+  },
+  inpuText: {
     backgroundColor: "#fff",
     fontSize: 16,
   },
@@ -81,8 +84,8 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: "row",
     justifyContent: "space-evenly",
-    alignItems: "baseline",
-    paddingVertical: 6,
-    marginVertical: 10,
+    alignItems: "center",
+    // paddingVertical: 6,
+    // marginVertical: 10,
   },
 });
