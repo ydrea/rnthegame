@@ -9,7 +9,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-.env.*
+.env
 # alt
 MapMod.js, Map.js, Play.js
 # macOS
