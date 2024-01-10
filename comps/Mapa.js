@@ -41,7 +41,7 @@ export default function Map() {
 	return (
 		<View style={styles.container}>
 			<MapView
-				//googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
+				googleMapsApiKey={process.env.EXPO_GOOGLE_MAPS_API_KEY}
 				style={styles.map}
 				ref={_map}
 				showsUserLocation={true}
