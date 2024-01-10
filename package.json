@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
+    "eas-cli": "^5.9.3",
     "expo": "47",
     "expo-location": "~15.0.1",
     "expo-permissions": "~14.0.0",
