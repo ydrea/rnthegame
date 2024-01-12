@@ -12,7 +12,7 @@
     },
     "preview": {
       "env": {
-        "EXPO_GOOGLE_MAPS_API_KEY":"AIzaSyBwmn35saBywKbqKjCv6Cy6VH2m6nEt6_c"
+        "EXPO_GOOGLE_MAPS_API_KEY":"AIzaSyD4HbRzt0gL8yWCgS7p1xXXERy6Na7o910"
       },
       "developmentClient":false,
       "android": {
