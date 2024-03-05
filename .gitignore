@@ -10,6 +10,7 @@ npm-debug.*
 *.orig.*
 web-build/
 .env.*
+.envrc
 # alt
 MapMod.js, Map.js, Play.js
 # macOS
