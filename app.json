@@ -1,6 +1,6 @@
 {
   "expo": {
-    "owner": "ydreawrld",
+    "owner": "ydrea",
     "name": "thegamezagrebeta",
     "slug": "thegamezagrebeta",
     "version": "1.0.0",
@@ -15,7 +15,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -28,10 +30,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.ydrea.thegamezagrebeta"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f8a15883-efb4-4c6f-a3a4-340856aa5363"
+      }
     }
   }
 }
