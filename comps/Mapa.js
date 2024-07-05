@@ -10,7 +10,13 @@ export default function Map() {
   const count = useSelector(selectCount);
   // console.log(count);
   const sculptures = useSelector(selectSculptures);
+  //check em
+    if (!sculptures || sculptures.length === 0 || count >= sculptures.length) {
+      return null;
+    }
+  //map em
   const cordinates = sculptures.map((m) => m.coordinate);
+  
   //select it
   const sculpture = sculptures[`${count}`];
   const marker = sculpture.coordinate;
@@ -22,7 +28,7 @@ export default function Map() {
   const _map = useRef(null);
 
   useEffect(() => {
-    if (_map.current) {
+    if (_map.current && marker) {
       const newCamera = {
         center: { ...marker },
         zoom: 12,
@@ -37,6 +43,8 @@ export default function Map() {
   return (
     <View style={styles.container}>
       <MapView
+      provider='google'
+      googleMapsApiKey='AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI'
         style={styles.map}
         ref={_map}
         showsUserLocation={true}
