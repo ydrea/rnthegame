@@ -21,6 +21,10 @@ export default function Map() {
   const sculpture = sculptures[`${count}`];
   const marker = sculpture.coordinate;
   //
+  if (!marker || marker.latitude == null || marker.longitude == null) {
+    return null;
+  }
+
   const tal = sculpture.coordinate.latitude;
   const nol = sculpture.coordinate.longitude;
   console.log(tal);
@@ -38,7 +42,7 @@ export default function Map() {
       };
       _map.current.animateCamera(newCamera, { duration: 4000 });
     }
-  }, [count]);
+  }, [count, marker]);
   //
   return (
     <View style={styles.container}>
