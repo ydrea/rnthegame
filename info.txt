@@ -21,3 +21,7 @@ System:
     react-native: 0.69.5 => 0.69.5 
   npmGlobalPackages:
     *react-native*: Not Found
+
+
+
+Some users have experienced emulator stability issues with this driver version.  As a result, we're selecting a compatibility renderer.  Please check with your manufacturer to see if there is an updated driver available.
