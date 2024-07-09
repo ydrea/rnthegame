@@ -10,7 +10,12 @@
     "preview": {
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "developmentClient": false,
+      "distribution": "store",
+      "env": {"googleMaps": "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},
+      "android": {"buildType": "apk"}
+    }
   },
   "submit": {
     "production": {}
