@@ -7,15 +7,17 @@
       "developmentClient": true,
       "distribution": "internal"
     },
-    "client":{"developmentClient": true},
+    "client":{"developmentClient": true,
+        "env": {"EXPO_PUBLIC_GOOGLE_MAPS_API_KEY":
+      "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},},
     "preview": {
       "distribution": "internal"
     },
-    "production": {
-      "developmentClient": false,
-      "distribution": "store",
-      "env": {"googleMaps": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"}
-      // "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},
+    // "production": {
+    //   "developmentClient": false,
+    //   "distribution": "store",
+    //   "env": {"googleMaps": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"}
+    //   // "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},
 // "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY":"AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"
       // "android": {"buildType": "apk"}
     
@@ -23,5 +25,4 @@
   "submit": {
     "production": {}
   }
-}
 }

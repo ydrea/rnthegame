@@ -79,3 +79,4 @@ dist/
 # @end expo-cli
 info.txt
 concrete*.json
+eas.json
