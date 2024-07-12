@@ -42,7 +42,7 @@ export default function Map() {
     <View style={styles.container}>
       <MapView
         provider='google'
-        googleMapsApiKey='AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI'
+        googleMapsApiKey={process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY}
         style={styles.map}
         ref={_map}
         showsUserLocation={true}

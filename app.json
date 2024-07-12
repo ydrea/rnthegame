@@ -19,12 +19,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ydrea.thegamezagrebeta"
     },
     "android": {
       "config": {
         "googleMaps": {
-          "apiKey": "GOOGLE_MAPS_API_KEY"
+          "apiKey": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
         }
       },
       "adaptiveIcon": {

@@ -21,3 +21,13 @@ System:
     react-native: 0.69.5 => 0.69.5 
   npmGlobalPackages:
     *react-native*: Not Found
+
+
+
+Some users have experienced emulator stability issues with this driver version.  As a result, we're selecting a compatibility renderer.  Please check with your manufacturer to see if there is an updated driver available.
+
+Amazon
+app id:
+amzn1.devportal.mobileapp.a568df4060d640b58758279df5351246
+release id:
+amzn1.devportal.apprelease.74a80c0183af49dc95a31118f1ec4200
