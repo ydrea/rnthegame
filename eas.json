@@ -9,10 +9,14 @@
     },
     "client":{"developmentClient": true,
         "env": {"EXPO_PUBLIC_GOOGLE_MAPS_API_KEY":
-      "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},},
-    "preview": {
-      "distribution": "internal"
+      "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"}
     },
+    "preview":        
+     {"env": {"EXPO_PUBLIC_GOOGLE_MAPS_API_KEY":
+    "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},
+    "android": {"buildType": "apk"}
+   
+  }
     // "production": {
     //   "developmentClient": false,
     //   "distribution": "store",
