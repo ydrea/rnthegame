@@ -5,7 +5,7 @@
     "slug": "thegamezagrebeta",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/AppIcons/AppIcons/playstore.png",
+    "icon": "./assets/AppIcons/playstore.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/logoZG.png",

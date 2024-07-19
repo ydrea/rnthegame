@@ -31,3 +31,12 @@ app id:
 amzn1.devportal.mobileapp.a568df4060d640b58758279df5351246
 release id:
 amzn1.devportal.apprelease.74a80c0183af49dc95a31118f1ec4200
+
+
+A navigation game introducing the user to sculptures of literary figures in Zagreb, Croatia.
+
+he Game @ Zagreb is navigation game, introducing the visitors to sculptures of literary figures in Zagreb, Croatia. It consists of two screens: 1. Gameplay in the form of Q&A, where the user enters the answer to the questin and, if it's correct, receives a point and an award in a form of a literary excerpt relevant to the location. 2. Map with marked locations on which the Q&As are based. It is used as a demonstrator for the eco-museum mobile apps development service.
+Product feature bullets
+- navigation through Zagreb downtown
+- Q&A game, with literary excerpts as awards
+- a points system
