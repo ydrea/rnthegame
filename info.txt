@@ -32,6 +32,7 @@ amzn1.devportal.mobileapp.a568df4060d640b58758279df5351246
 release id:
 amzn1.devportal.apprelease.74a80c0183af49dc95a31118f1ec4200
 
+34.2 MB
 
 A navigation game introducing the user to sculptures of literary figures in Zagreb, Croatia.
 

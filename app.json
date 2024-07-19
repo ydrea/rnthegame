@@ -13,7 +13,8 @@
       "backgroundColor": "#31328f"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/f8a15883-efb4-4c6f-a3a4-340856aa5363"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -23,14 +24,6 @@
       "bundleIdentifier": "com.ydrea.thegamezagrebeta"
     },
     "android": {
-
-      
-            
-      "config": {
-        "googleMaps": {
-          "apiKey": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
-        }
-      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -44,6 +37,7 @@
       "eas": {
         "projectId": "f8a15883-efb4-4c6f-a3a4-340856aa5363"
       }
-    }
+    },
+    "runtimeVersion": "1.0.0"
   }
 }
