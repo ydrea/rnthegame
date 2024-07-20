@@ -17,12 +17,12 @@
     "android": {"buildType": "apk"}
      },
     "production": {
-      // "developmentClient": false,
-      "env": { "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY": "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"},
-      "android": {"buildType": "apk"}
+      "android":{"image":"latest","buildType": "apk"},
+
+      "env": { "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY": "AIzaSyCG2LnDfSNcEMi46uH8BEd5gIUtZwFTlTI"}
     
   },
-  "submit": {
-    "production": {}
-  }
+  // "submit": {
+    // "production": {}
+  // }
 }}

@@ -5,7 +5,7 @@
     "slug": "thegamezagrebeta",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logoZG.png",
+    "icon": "./assets/logo.svg",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/logoZG.png",
@@ -25,8 +25,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/favicon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/logo.svg",
+        "backgroundColor": "#31328f"
       },
       "package": "com.ydrea.thegamezagrebeta"
     },
