@@ -1,8 +1,8 @@
 {
   "expo": {
     "owner": "andrijavr",
-    "name": "thegamezagrebeta",
-    "slug": "thegamezagrebeta",
+    "name": "thegamezagreb",
+    "slug": "thegamezagreb",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logoZG.png",
@@ -22,15 +22,16 @@
       "supportsTablet": true,
     },
     "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
       "config": {
         "googleMaps": {
           "apiKey": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
         }
       },
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+
     },
     "web": {
       "favicon": "./assets/favicon.png"
