@@ -1,5 +1,5 @@
 import 'expo-dev-client';
-
+ 
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import { Provider as ReduxProvider } from "react-redux";
