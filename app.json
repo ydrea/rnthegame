@@ -5,10 +5,10 @@
     "slug": "thegamezagrebeta",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/AppIcons/AppIcons/playstore.png",
+    "icon": "./assets/1024.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/logoZG.png",
+      "image": "./assets/1024.png",
       "resizeMode": "contain",
       "backgroundColor": "#31328f"
     },
@@ -29,8 +29,8 @@
         }
       },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/1024.png",
+        "backgroundColor": "#31328f"
       },
       "package": "com.ydrea.thegamezagrebeta"
     },
