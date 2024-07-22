@@ -5,10 +5,10 @@
     "slug": "thegamezagreb",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logoZG.png",
+    "icon": "./assets/1024.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/logoZG.png",
+      "image": "./assets/1024.png",
       "resizeMode": "contain",
       "backgroundColor": "#31328f"
     },
@@ -23,18 +23,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/1024.png",
+        "backgroundColor": "#31328f"
       },
       "config": {
         "googleMaps": {
           "apiKey": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
         }
       }
-
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fc3f7e18-6585-498e-ba92-1d587b8c74ec"
+      }
     }
   }
 }
