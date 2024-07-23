@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>thegamezagrebeta</string>
+    <string>thegamezagreb</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -25,13 +25,13 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>com.ydrea.thegamezagrebeta</string>
+          <string>com.andrijavr.thegamezagreb</string>
         </array>
       </dict>
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+thegamezagrebeta</string>
+          <string>exp+thegamezagreb</string>
         </array>
       </dict>
     </array>
