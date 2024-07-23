@@ -8,7 +8,7 @@
     "icon": "./assets/logoZG.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/logoZG.png",
+      "image": "./assets/1024.png",
       "resizeMode": "contain",
       "backgroundColor": "#31328f"
     },
@@ -22,15 +22,24 @@
       "supportsTablet": true
     },
     "android": {
-      
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logoZG.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#31328f"
       },
       "package": "com.ydrea.thegame_zagreb"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9c817693-0e46-4085-a590-75195f3e3434"
+      }
+    }
+  },
+  "extra": {
+    "eas": {
+      "projectId": "9c817693-0e46-4085-a590-75195f3e3434"
     }
   }
 }

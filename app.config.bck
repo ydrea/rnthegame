@@ -1,0 +1,22 @@
+export default ({ config }) => ({
+  ...config,
+  name: config.name ?? "",
+  slug: config.slug ?? "",
+  android: {
+    adaptiveIcon: {
+      foregroundImage: "./assets/adaptive-icon.png",
+      backgroundColor: "#31328f"
+    },
+    config: {
+      googleMaps: {
+        apiKey: process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY
+      }
+    },
+
+    // extra: {
+    //     eas: {
+    //       projectId: "9c817693-0e46-4085-a590-75195f3e3434"
+    //     }
+    //   }
+  }
+});
