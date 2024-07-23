@@ -1,8 +1,8 @@
 {
   "expo": {
-    "owner": "ydrea",
-    "name": "thegamezagreb",
-    "slug": "thegamezagreb",
+    "owner": "andrijavr",
+    "name": "thegame@zagreb",
+    "slug": "thegame_zagreb",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logoZG.png",
@@ -27,7 +27,7 @@
         "foregroundImage": "./assets/logoZG.png",
         "backgroundColor": "#31328f"
       },
-      "package": "com.ydrea.thegamezagreb"
+      "package": "com.ydrea.thegame_zagreb"
     },
     "web": {
       "favicon": "./assets/favicon.png"
