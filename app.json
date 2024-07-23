@@ -1,8 +1,8 @@
 {
   "expo": {
     "owner": "ydrea",
-    "name": "thegamezagrebeta",
-    "slug": "thegamezagrebeta",
+    "name": "thegamezagreb",
+    "slug": "thegamezagreb",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logoZG.png",
@@ -22,24 +22,15 @@
       "supportsTablet": true
     },
     "android": {
-      "config": {
-        "googleMaps": {
-          "apiKey": "GOOGLE_MAPS_API_KEY"
-        }
-      },
+      
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.ydrea.thegamezagrebeta"
+      "package": "com.ydrea.thegamezagreb"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "f8a15883-efb4-4c6f-a3a4-340856aa5363"
-      }
     }
   }
 }
